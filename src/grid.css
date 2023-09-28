@@ -1,0 +1,59 @@
+/* toda a grid principal ficara aqui com suas grid areas */
+
+.main-grid {
+     max-width: 1440px;
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: auto;
+     margin: 0 auto;
+     padding: 0 100px;
+     grid-template-areas:
+          "header header header header header header header header header header header header"
+          ". . img img img img img img img img . ."
+          ". . . introduction introduction introduction introduction introduction introduction . . ."
+          "cta cta cta cta cta cta cta cta cta . . ."
+          ". . . helpe helpe helpe helpe helpe helpe . . ."
+          ". goal goal goal goal goal goal goal . . . ."
+          "footer footer footer footer footer footer footer footer footer footer footer footer";
+     place-items: center;
+     row-gap: 3rem;
+}
+
+.header {
+     grid-area: header;
+     width: 100%;
+}
+
+.footer {
+     grid-area: footer;
+     width: 100%;
+}
+
+.imagem {
+     grid-area: img;
+     width: 100%;
+}
+
+.apresentacao {
+     grid-area: introduction;
+     width: 100%;
+     padding: var(--p4);
+}
+
+.call-to-action {
+     grid-area: cta;
+     width: 100%;
+     padding: var(--p4);
+}
+
+.ajudar {
+     grid-area: helpe;
+     width: 100%;
+     padding: var(--p4);
+}
+
+.objetivo {
+     grid-area: goal;
+     width: 100%;
+     padding: var(--p4);
+}

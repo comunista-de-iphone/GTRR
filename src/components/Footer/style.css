@@ -1,0 +1,31 @@
+.footer {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, 186px);
+     gap: var(--spacing-md);
+     justify-content: space-between;
+     margin-bottom: var(--spacing-md);
+}
+
+.footer .promos {
+     display: flex;
+     flex-direction: column;
+     gap: var(--spacing-md);
+}
+
+.footer .promos .socials {
+     display: flex;
+     justify-content: space-between;
+}
+
+.footer .list {
+     white-space: nowrap;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: var(--spacing-sm);
+}
+
+.footer .list a:hover {
+     color: var(--red);
+}

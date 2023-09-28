@@ -1,0 +1,240 @@
+@font-face {
+     font-family: MolotGTRR;
+     src: url('assets/fonts/Molot_GTRR.otf');
+}
+
+@font-face {
+     font-family: OpenDyslexic;
+     src: url('assets/fonts/OpenDyslexicAlta-Regular.otf');
+}
+
+/* variáveis */
+:root {
+     font-family: OpenDyslexic;
+     --bg: #EDE6D3;
+     --black: #25232b;
+     --white: #F3EFE4;
+     --red: #FF1800;
+     --orange: #F96049;
+     --blush: #FF18006B;
+     --font-size-sm: 18px;
+     --font-size-md: 21px;
+     --font-size-lg: 41px;
+     --letter-spacing: 2%;
+     --spacing-xs: 5px;
+     --spacing-sm: 10px;
+     --spacing-md2: 20px;
+     --spacing-md: 30px;
+     --spacing-xl: 100px;
+     --border-radius-lg: 16px;
+     --border-radius-md: 8px;
+     --border-radius-sm: 4px;
+     --fontfamily: MolotGTRR;
+
+     /* padding */
+     --p1: 40px 0;
+     --p2: 30px 0;
+     --p3: 20px 0;
+     --p4: 10px 0;
+     --p5: 5px 0;
+
+     /* bordas  */
+     --br1: 12px;
+     --br2: 6px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+     display: block;
+}
+
+body {
+     line-height: 1;
+}
+
+ol,
+ul {
+     list-style: none;
+}
+
+blockquote,
+q {
+     quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+     content: '';
+     content: none;
+}
+
+
+table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+
+body {
+     background-color: var(--bg);
+     width: 100%;
+     overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+/* custom resets */
+button {
+     background: none;
+     color: inherit;
+     border: none;
+     padding: 0;
+     font: inherit;
+     cursor: pointer;
+     outline: inherit;
+}
+
+a {
+     text-decoration: none;
+     color: inherit;
+}
+
+h1,
+h2 {
+     text-align: center;
+     line-height: 1.5em;
+     letter-spacing: 0.02em;
+     font-family: var(--fontfamily);
+     white-space: nowrap;
+}
+
+h1 {
+     font-size: var(--font-size-lg);
+}
+
+h2 {
+     font-size: var(--font-size-md);
+}
+
+p {
+     font-size: 16px;
+     line-height: 150%;
+     margin-bottom: var(--spacing-md);
+}
+
+
+/* minhas classes */
