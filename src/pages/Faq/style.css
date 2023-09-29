@@ -8,7 +8,7 @@
      grid-template-areas:
           "tt tt tt tt tt tt tt tt tt tt tt tt"
           ". . fq fq fq fq fq fq fq fq . ."
-          "ca ca ca ca ca ca ca ca ca ca . .";
+          "cta cta cta cta cta cta cta cta cta cta . .";
 } 
 
 .faq { 
@@ -22,7 +22,7 @@
 }
 
 .call-to-action {
-     grid-area: ca;
+     grid-area: cta;
      width: 100%;
      text-align: right;
 }
