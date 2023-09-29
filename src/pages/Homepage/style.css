@@ -1,3 +1,54 @@
+/* .grid {
+     grid-template-areas:
+          ". . img img img img img img img img . ."
+          ". . . intro intro intro intro intro intro . . ."
+          "cta cta cta cta cta cta cta cta cta . . ."
+          ". . . ajuda ajuda ajuda ajuda ajuda ajuda . . ."
+          ". goal goal goal goal goal goal goal . . . .";
+} */
+.grid-inicio {
+     grid-template-areas:
+          "img img img img img img img img img img img img"
+          ". . . intro intro intro intro intro intro . . ."
+          "cta cta cta cta cta cta cta cta cta . . ."
+          ". . . ajuda ajuda ajuda ajuda ajuda ajuda . . ."
+          ". goal goal goal goal goal goal goal . . . .";
+}
+
+.imagem {
+     grid-area: img;
+     width: 100%;
+}
+
+.apresentacao {
+     grid-area: intro;
+     padding: var(--p4);
+     width: 100%;
+}
+
+.call-to-action {
+     grid-area: cta;
+     padding: var(--p4);
+     width: 100%;
+}
+
+.ajudar {
+     grid-area: ajuda;
+     padding: var(--p4);
+     width: 100%;
+}
+
+.objetivo {
+     grid-area: goal;
+     padding: var(--p4);
+     width: 100%;
+     
+}
+
+
+
+
+
 .imagem img {
      width: 100%;
      min-width: 480px;
@@ -116,7 +167,8 @@
      margin: 50px 0px;
 }
 
-.cta-left::before, .cta-right::before {
+.cta-left::before,
+.cta-right::before {
      display: block;
      content: '';
      background-color: var(--black);
@@ -126,6 +178,7 @@
      z-index: -1;
      border-radius: var(--br2);
 }
+
 /* barra preta */
 
 a.link-button {

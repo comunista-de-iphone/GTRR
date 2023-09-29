@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Carat from '../../assets/carat-down.svg';
 import Logo from '../../assets/GTRR-Logo.svg';
 import './style.css';
@@ -7,51 +8,51 @@ const Header = () => {
      return (
           <>
                <header className="header">
-                    <a href="index.html"><img className="header-logo" src={Logo} alt="GTRR" /></a>
+                    <Link to="/"><img className="header-logo" src={Logo} alt="GTRR" /></Link>
                     <nav className="nav-options">
-                         <a className="nav-item" href="index.html">INÍCIO</a>
-                         <a className="nav-item" href="primeiros-passos.html">PRIMEIROS PASSOS</a>
+                         <Link className="nav-item" to="/">INÍCIO</Link>
+                         <Link className="nav-item" to="/primeiros-passos">PRIMEIROS PASSOS</Link>
                          <div className="sub-nav">
                               <button className="sub-nav-btn">SOBRE <img src={Carat} alt="(+)" /></button>
                               <div className="sub-nav-content">
-                                   <a className="sub-nav-item" href="estatuto.html">ESTATUTO</a>
-                                   <a className="sub-nav-item" href="manifesto.html">MANIFESTO</a>
+                                   <Link className="sub-nav-item" to="/estatuto">ESTATUTO</Link>
+                                   <Link className="sub-nav-item" to="/manifesto">MANIFESTO</Link>
                               </div>
                          </div>
-                         <a className="nav-item" href="faq.html">FAQ</a>
+                         <Link className="nav-item" to="/faq">FAQ</Link>
                          <div className="sub-nav">
                               <button className="sub-nav-btn">PROJETOS <img src={Carat} alt="(+)" /></button>
                               <div className="sub-nav-content">
-                                   <a className="sub-nav-item" href="em-andamento.html">EM ANDAMENTO</a>
-                                   <a className="sub-nav-item" href="finalizados.html">FINALIZADOS</a>
-                                   <a className="sub-nav-item" href="sugestao.html">SUGIRA UM PROJETO</a>
+                                   <Link className="sub-nav-item" to="/em-andamento">EM ANDAMENTO</Link>
+                                   <Link className="sub-nav-item" to="/finalizados">FINALIZADOS</Link>
+                                   <Link className="sub-nav-item" to="/sugestao">SUGIRA UM PROJETO</Link>
                               </div>
                          </div>
-                         <a className="nav-item" href="cadastro.html">CADASTRO</a>
+                         <Link className="nav-item" to="/cadastro">CADASTRO</Link>
                     </nav>
                </header>
                <div className="hamburger-menu">
                     <span className="hamburger-icon">☰</span>
                     <div className="hamburger-options">
-                         <a className="hamburger-item" href="index.html">INÍCIO</a>
-                         <a className="hamburger-item" href="primeiros-passos.html">PRIMEIROS PASSOS</a>
+                         <Link className="hamburger-item" to="/">INÍCIO</Link>
+                         <Link className="hamburger-item" to="/primeiros-passos">PRIMEIROS PASSOS</Link>
                          <div className="sub-hamburger">
-                              <a className="sub-hamburger-btn">SOBRE</a>
+                              <Link className="sub-hamburger-btn">SOBRE</Link>
                               <div className="sub-hamburger-content">
-                                   <a className="sub-hamburger-item" href="estatuto.html">ESTATUTO</a>
-                                   <a className="sub-hamburger-item" href="manifesto.html">MANIFESTO</a>
+                                   <Link className="sub-hamburger-item" to="/estatuto">ESTATUTO</Link>
+                                   <Link className="sub-hamburger-item" to="/manifesto">MANIFESTO</Link>
                               </div>
                          </div>
-                         <a className="hamburger-item" href="faq.html">FAQ</a>
+                         <Link className="hamburger-item" to="faq">FAQ</Link>
                          <div className="sub-hamburger">
                               <button className="sub-hamburger-btn">PROJETOS</button>
                               <div className="sub-hamburger-content">
-                                   <a className="sub-hamburger-item" href="em-andamento.html">EM ANDAMENTO</a>
-                                   <a className="sub-hamburger-item" href="finalizados.html">FINALIZADOS</a>
-                                   <a className="sub-hamburger-item" href="sugestao.html">SUGIRA UM PROJETO</a>
+                                   <Link className="sub-hamburger-item" to="/em-andamento">EM ANDAMENTO</Link>
+                                   <Link className="sub-hamburger-item" to="/finalizados">FINALIZADOS</Link>
+                                   <Link className="sub-hamburger-item" to="/sugestao">SUGIRA UM PROJETO</Link>
                               </div>
                          </div>
-                         <a className="hamburger-item" href="cadastro.html">CADASTRO</a>
+                         <Link className="hamburger-item" to="/cadastro">CADASTRO</Link>
                     </div>
                </div>
           </>

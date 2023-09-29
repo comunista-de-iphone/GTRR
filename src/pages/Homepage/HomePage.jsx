@@ -1,10 +1,11 @@
 import React from 'react';
 import Hero from '../../assets/Hero.svg';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 const HomePage = () => {
      return (
-          <>
+          <main className="grid grid-inicio">
                <section className="imagem">
                     <img src={Hero} alt="GTRR" />
                </section>
@@ -21,8 +22,8 @@ const HomePage = () => {
 
                <section className="call-to-action">
                     <div className="cta-left">
-                         <a className="link-button" href="/primeiros-passos.html">PRIMEIROS PASSOS</a>
-                         <a className="link-arrow" href="sobre-nos/manifesto.html">NOSSO MANIFESTO</a>
+                         <Link to="/primeiros-passos" className="link-button">PRIMEIROS PASSOS</Link>
+                         <Link to="/manifesto" className="link-arrow">NOSSO MANIFESTO</Link>
                     </div>
                </section>
 
@@ -45,7 +46,7 @@ const HomePage = () => {
                          membros da GTRR.</p>
 
                     <div className="outside-links">
-                         <a href="#" className="button-link">veja mais perguntas frequentes</a>
+                         <Link to="/faq" className="button-link">Veja mais perguntas frequentes</Link>
                     </div>
                </section>
 
@@ -58,11 +59,11 @@ const HomePage = () => {
                          enquanto fornecemos formação à nova geração de profissionais de tradução sob uma ótica radical e
                          crítica.</p>
                     <div className="outside-links">
-                         <a href="#" className="button-link">MANIFESTO</a>
-                         <a href="#" className="button-link">ESTATUTO</a>
+                         <Link to="/manifesto" className="button-link">MANIFESTO</Link>
+                         <Link to="/estatuto" className="button-link">ESTATUTO</Link>
                     </div>
                </section>
-          </>
+          </main>
      )
 }
 

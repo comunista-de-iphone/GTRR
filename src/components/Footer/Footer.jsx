@@ -4,6 +4,7 @@ import Instagram from '../../assets/Instagram.svg';
 import TikTok from '../../assets/TikTok.svg';
 import YouTube from '../../assets/YouTube.svg';
 import FooterPic from '../../assets/GTRR-Footer.svg';
+import { Link } from 'react-router-dom';
 
 import './style.css';
 
@@ -13,30 +14,30 @@ function Footer() {
                <div className="promos">
                     <img src={FooterPic} alt="GTRR" />
                     <div className="socials">
-                         <a href="#"><img src={Twitter} alt="Twitter" /></a>
-                         <a href="#"><img src={Instagram} alt="Instagram" /></a>
-                         <a href="#"><img src={TikTok} alt="TikTok" /></a>
-                         <a href="#"><img src={YouTube} alt="YouTube" /></a>
+                         <Link to="/"><img src={Twitter} alt="Twitter" /></Link>
+                         <Link to="/"><img src={Instagram} alt="Instagram" /></Link>
+                         <Link to="/"><img src={TikTok} alt="TikTok" /></Link>
+                         <Link to="/"><img src={YouTube} alt="YouTube" /></Link>
                     </div>
                </div>
 
                <div className="list">
                     <h2>ESSENCIAIS</h2>
-                    <a href="index.html">INÍCIO</a>
-                    <a href="primeiros-passos.html">PRIMEIROS PASSOS</a>
-                    <a href="sobre-nos/estatuto.html">ESTATUTO</a>
-                    <a href="sobre-nos/manifesto.html">MANIFESTO</a>
-                    <a href="faq.html">PERGUNTAS FREQUENTES</a>
+                    <Link to="/">INÍCIO</Link>
+                    <Link to="primeiros-passos">PRIMEIROS PASSOS</Link>
+                    <Link to="/estatuto">ESTATUTO</Link>
+                    <Link to="/manifesto">MANIFESTO</Link>
+                    <Link to="/faq">PERGUNTAS FREQUENTES</Link>
                </div>
                <div className="list">
                     <h2>FORMULÁRIOS</h2>
-                    <a href="projetos/sugestao.html">SUGESTÃO DE PROJETO</a>
-                    <a href="cadastro.html">CADASTRO</a>
+                    <Link to="/sugestao">SUGESTÃO DE PROJETO</Link>
+                    <Link to="/cadastro">CADASTRO</Link>
                </div>
                <div className="list">
                     <h2>PROJETOS</h2>
-                    <a href="projetos/em-andamento.html">EM ANDAMENTO</a>
-                    <a href="projetos/finalizados.html">FINALIZADOS</a>
+                    <Link to="/em-andamento">EM ANDAMENTO</Link>
+                    <Link to="/finalizados">FINALIZADOS</Link>
                </div>
           </footer>
      )
