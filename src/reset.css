@@ -238,3 +238,77 @@ p {
 
 
 /* minhas classes */
+.borda1 {
+     border-radius: var(--br1);
+}
+
+.borda2 {
+     border-radius: var(--br2);
+}
+
+.highlight {
+     background-color: var(--orange);
+}
+
+.cta-left {
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     gap: var(--spacing-md);
+     margin: 50px 0px;
+}
+
+.cta-left::before,
+.cta-right::before {
+     content: '';
+     border-radius: var(--br2);
+     display: block;
+     background-color: var(--black);
+     position: absolute;
+     width: 100%;
+     height: 100px;
+     z-index: -1;
+}
+
+.cta-right {
+     display: inline-flex;
+     align-items: center;
+     justify-content: flex-start;
+     gap: var(--spacing-md);
+     margin: 50px 0px;
+}
+
+.call-to-action .cta-left::before {
+     height: 75px;
+}
+
+a.link-button {
+     font-family: MolotGTRR;
+     font-size: var(--font-size-md);
+     color: var(--white);
+     border: 3px solid var(--white);
+     border-radius: var(--border-radius-lg);
+     padding: 15px 40px;
+     margin: 0px var(--spacing-md);
+     white-space: nowrap;
+
+     font-weight: 400;
+     line-height: 1.5rem;
+     letter-spacing: 1.68px;
+}
+
+a.link-arrow {
+     margin-right: var(--spacing-md);
+     display: inline-flex;
+     align-items: center;
+     gap: var(--spacing-sm);
+     color: var(--white);
+     font-size: var(--font-size-md);
+
+     margin: 0px var(--spacing-md);
+     white-space: nowrap;
+}
+
+a.link-arrow::after {
+     content: url("../../assets/img/Arrow-1.svg");
+}

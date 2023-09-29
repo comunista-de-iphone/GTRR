@@ -1,27 +1,21 @@
-/* .grid {
+.grid_faq {
      grid-template-areas:
           "tt tt tt tt tt tt tt tt tt tt tt tt"
-          ". . fq fq fq fq fq fq fq fq . ."
-          "ca ca ca ca ca ca ca ca ca ca . .";
-}  */
-.grid-faq {
-     grid-template-areas:
-          "tt tt tt tt tt tt tt tt tt tt tt tt"
-          ". . fq fq fq fq fq fq fq fq . ."
-          "cta cta cta cta cta cta cta cta cta cta . .";
+          "fq fq fq fq fq fq fq fq fq fq fq fq"
+          "cta cta cta cta cta cta cta cta cta cta cta cta";
 } 
-
-.faq { 
-     grid-area: fq;
-     width: 100%;
-}
 
 .title {
      grid-area: tt;
      width: 100%;
 }
 
-.call-to-action {
+.faq { 
+     grid-area: fq;
+     width: 100%;
+}
+
+.call_to_action {
      grid-area: cta;
      width: 100%;
      text-align: right;
@@ -29,21 +23,22 @@
 
 
 
+
 .title h1 {
      font-size: 81px;
 }
 
-.show-text {
+.show_text {
      margin: 46px 0;
 }
 
-.show-text h3 {
+.show_text h3 {
      font-family: MolotGTRR;
      text-transform: uppercase;
      color: var(--bg);
 }
 
-.toggle-content {
+.toggle_content {
      background-color: var(--black);
      padding: 18px 25px;
      border-radius: 5px;
@@ -57,18 +52,17 @@
      flex-flow: row nowrap;
 }
 
-.toggle-content span {
+.toggle_content span {
      font-size: 26px;
      font-weight: 800;
 }
 
 .show {
-     display: none;
      line-height: 150%;
      font-weight: 400;
      padding: 16px 0;
 }
 
-.call-to-action .cta-left::before {
+.call_to_action .cta_left::before {
      height: 75px;
 }

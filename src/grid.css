@@ -17,7 +17,7 @@
 .header {
      grid-area: header;
      width: 100%;
-}
+} 
 
 .grid {
      grid-area: main;
