@@ -62,7 +62,7 @@
      color: var(--red);
 }
 
-.hamburger-menu .checkbox {
+.hamburger-menu .hamburger-checkbox {
      position: absolute;
      display: block;
      height: 32px;
@@ -97,14 +97,14 @@
      transform-origin: 0% 0%;
      transition: transform 0.4s ease-in-out;
  }  
- .hamburger-menu input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+ .hamburger-checkbox:checked ~ .hamburger-lines .line1 {
      transform: rotate(45deg);
  }
  
  .hamburger-menu .hamburger-lines .line2 {
      transition: transform 0.2s ease-in-out;
  }  
- .hamburger-menu input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+ .hamburger-checkbox:checked ~ .hamburger-lines .line2 {
      transform: scaleY(0);
  }
  
