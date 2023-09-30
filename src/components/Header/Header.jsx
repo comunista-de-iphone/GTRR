@@ -4,6 +4,18 @@ import Carat from '../../assets/carat-down.svg';
 import Logo from '../../assets/GTRR-Logo.svg';
 import './style.css';
 
+window.addEventListener('scroll', function() {
+     const element = document.querySelector('.hamburger-menu');
+     const container = document.body;
+     const scrollY = window.scrollY;
+ 
+     if (scrollY > container.offsetTop) {
+          element.classList.add('sticky');
+     } else {
+          element.classList.remove('sticky');
+     }
+});
+
 const Header = () => {
      return (
           <>
@@ -30,31 +42,33 @@ const Header = () => {
                          </div>
                          <Link className="nav-item" to="/cadastro">CADASTRO</Link>
                     </nav>
-               </header>
-               <div className="hamburger-menu">
-                    <span className="hamburger-icon">☰</span>
-                    <div className="hamburger-options">
-                         <Link className="hamburger-item" to="/">INÍCIO</Link>
-                         <Link className="hamburger-item" to="/primeiros-passos">PRIMEIROS PASSOS</Link>
-                         <div className="sub-hamburger">
-                              <Link className="sub-hamburger-btn">SOBRE</Link>
-                              <div className="sub-hamburger-content">
-                                   <Link className="sub-hamburger-item" to="/estatuto">ESTATUTO</Link>
-                                   <Link className="sub-hamburger-item" to="/manifesto">MANIFESTO</Link>
-                              </div>
+                    <div className="hamburger-menu">
+
+                         <input className="checkbox" type="checkbox" name="" id="" /> 
+                         <div className="hamburger-lines">
+                              <span className="line line1"></span>
+                              <span className="line line2"></span>
+                              <span className="line line3"></span>
+                         </div>  
+
+                         <div className="hamburger-options">
+                              <ul>
+                                   <h3>ESSENCIAIS</h3>
+                                   <li><Link to="/">INÍCIO</Link></li>
+                                   <li><Link to="/primeiros-passos">PRIMEIROS PASSOS</Link></li>
+                                   <li><Link to="/estatuto">ESTATUTO</Link></li>
+                                   <li><Link to="/manifesto">MANIFESTO</Link></li>
+                                   <li><Link to="/faq">PERGUNTAS FREQUENTES</Link></li>
+                                   <h3>FORMULÁRIOS</h3>
+                                   <li><Link to="/sugestao">SUGESTÃO DE PROJETO</Link></li>
+                                   <li><Link to="/cadastro">CADASTRO</Link></li>
+                                   <h3>PROJETOS</h3>
+                                   <li><Link to="/em-andamento">PROJETOS EM ANDAMENTO</Link></li>
+                                   <li><Link to="/finalizados">PROJETOS FINALIZADOS</Link></li>
+                              </ul>
                          </div>
-                         <Link className="hamburger-item" to="faq">FAQ</Link>
-                         <div className="sub-hamburger">
-                              <button className="sub-hamburger-btn">PROJETOS</button>
-                              <div className="sub-hamburger-content">
-                                   <Link className="sub-hamburger-item" to="/em-andamento">EM ANDAMENTO</Link>
-                                   <Link className="sub-hamburger-item" to="/finalizados">FINALIZADOS</Link>
-                                   <Link className="sub-hamburger-item" to="/sugestao">SUGIRA UM PROJETO</Link>
-                              </div>
-                         </div>
-                         <Link className="hamburger-item" to="/cadastro">CADASTRO</Link>
                     </div>
-               </div>
+               </header>
           </>
      )
 }
