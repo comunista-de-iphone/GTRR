@@ -59,8 +59,8 @@ const HomePage = () => {
                          enquanto fornecemos formação à nova geração de profissionais de tradução sob uma ótica radical e
                          crítica.</p>
                     <div className={styles.outside_links}>
-                         <Link to="/manifesto" className={styles.button_links}>MANIFESTO</Link>
-                         <Link to="/estatuto" className={styles.button_links}>ESTATUTO</Link>
+                         <Link to="/manifesto" className={styles.button_link}>MANIFESTO</Link>
+                         <Link to="/estatuto" className={styles.button_link}>ESTATUTO</Link>
                     </div>
                </section>
           </main>

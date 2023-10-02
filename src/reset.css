@@ -250,6 +250,18 @@ p {
      background-color: var(--orange);
 }
 
+.block-title {
+     font-size: 41px;
+     display: inline;
+     background-color: var(--black);
+     color: var(--bg);
+     line-height: 150%;  
+     text-align: center;
+     letter-spacing: 0.02em;
+     padding: var(--spacing-sm);
+     padding-bottom: var(--spacing-xs);
+ }
+
 .cta-left {
      display: flex;
      align-items: center;
@@ -282,6 +294,37 @@ p {
      height: 75px;
 }
 
+
+.right-line-title {
+     text-align: left;
+}
+
+.right-line-title::before {
+     display: block;
+     content: '';
+     border-bottom: 3px solid var(--black);
+     position: relative;
+     top: 1.5em;
+     width: 200%;
+     z-index: -1;
+}
+
+.left-line-title {
+     text-align: right;
+}
+
+.left-line-title::before {
+     display: block;
+     content: '';
+     border-bottom: 3px solid var(--black);
+     position: relative;
+     top: 1.5em;
+     left: -50%;
+     width: 150%;
+     z-index: -1;
+}
+
+
 a.link-button {
      font-family: MolotGTRR;
      font-size: var(--font-size-md);
@@ -312,3 +355,50 @@ a.link-arrow {
 a.link-arrow::after {
      content: url("../../assets/img/Arrow-1.svg");
 }
+
+/* info-list */
+div.info-list h2 {
+     vertical-align: middle;
+     font-size: 31px;
+     display: inline;
+     background-color: var(--black);
+     color: var(--bg);
+     padding: var(--spacing-sm);
+
+     position: relative;
+     top: 0.8rem;
+     left: 1em;
+}
+
+/* lista principal */
+div.info-list>ul {
+     font-size: 16px;
+     background-color: var(--orange);
+     padding: 13px 35px;
+     border-radius: 5px;
+     list-style-position: inside;
+     line-height: 1.5em;
+}
+
+div.info-list>ul>li::before {
+     content: url('../../assets/img/arrow-right-normal.svg');
+     position: relative;
+     top: 0.3em;
+}
+
+/* sub-listas */
+div.info-list li>ul {
+     font-size: 16px;
+     padding: 0px 35px;
+     list-style-position: inside;
+     line-height: 1.5em;
+}
+
+div.info-list li>ul>li::before {
+     content: url('../../assets/img/navbar-active-dot.svg');
+     position: relative;
+     bottom: 0.2em;
+     margin: 0 var(--spacing-sm);
+}
+
+/* /info-list */

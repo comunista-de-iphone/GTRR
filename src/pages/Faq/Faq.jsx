@@ -83,7 +83,7 @@ const Faq = () => {
   return (
     <main className={`grid ${styles.grid_faq}`}>
       <section className={styles.title}>
-        <h1 className="highlight">perguntas frequentes</h1>
+        <h1><span className='highlight'>perguntas frequentes</span></h1>
       </section>
 
 
@@ -101,7 +101,7 @@ const Faq = () => {
 
 
       <section className={`call-to-action ${styles.call_to_action}`}>
-        <div className={`cta-left`}>
+        <div className="cta-left">
           <a href="#" className={`link-arrow ${styles.link_arrow}`}>TEM ALGUMA DÚVIDA NÃO RESPONDIDA? NOS MANDE UM EMAIL</a>
         </div>
         <p>Ou nos pergunte em nossas redes sociais!</p>

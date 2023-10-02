@@ -11,7 +11,6 @@
           "main"
           "footer";
      place-items: center;
-     row-gap: 3rem;
 }
 
 .header {
@@ -25,6 +24,7 @@
      grid-template-columns: repeat(12, 1fr);
      grid-template-rows: auto;
      place-items: center;
+     row-gap: 3rem;
 }
 
 .footer {
