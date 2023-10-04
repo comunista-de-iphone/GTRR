@@ -1,9 +1,11 @@
 .footer {
      width: 100%;
-     display: grid;
+     /* display: grid;
      grid-template-columns: repeat(auto-fit, 186px);
-     gap: var(--spacing-md);
+     gap: var(--spacing-md); */
+     display: flex;
      justify-content: space-between;
+     align-items: flex-start;
      margin-bottom: var(--spacing-md);
 }
 

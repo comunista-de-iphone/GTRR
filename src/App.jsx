@@ -12,7 +12,7 @@ import EmAndamento from './pages/EmAndamento/EmAndamento'
 import Finalizados from './pages/Finalizados/Finalizados'
 import SugiraProjeto from './pages/SugiraProjeto/SugiraProjeto'
 import Error from './pages/Error/Error'
-import './reset.css';
+import './app.css';
 import './grid.css';
 
 
