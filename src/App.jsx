@@ -15,9 +15,6 @@ import Error from './pages/Error/Error'
 import './reset.css';
 import './grid.css';
 
-// a body precisa receber a grid contendo header contetn e footer 
-// em seguida crie uma main e adicione uma nova grid contendo todo o estilo de content com grid 
-// esse contenudo da content sempre sera atualizado quando mudar de pagina sempre mantendo a grid principal intacta
 
 const App = () => {
   return (

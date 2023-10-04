@@ -5,7 +5,6 @@ import TikTok from '../../assets/TikTok.svg';
 import YouTube from '../../assets/YouTube.svg';
 import FooterPic from '../../assets/GTRR-Footer.svg';
 import { Link } from 'react-router-dom';
-
 import './style.css';
 
 function Footer() {
