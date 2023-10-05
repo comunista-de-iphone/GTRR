@@ -21,6 +21,7 @@ h2 {
      letter-spacing: 0.02em;
      font-family: var(--fontfamily);
      white-space: nowrap;
+     color: var(--black);
 }
 
 h1 {
@@ -32,8 +33,9 @@ h2 {
 }
 
 p {
-     font-size: 16px;
+     font-size: var(--font-size-xs);
      line-height: 150%;
+     color: var(--black);
      margin-bottom: var(--spacing-md);
 }
 

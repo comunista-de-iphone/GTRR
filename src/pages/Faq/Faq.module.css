@@ -1,7 +1,7 @@
 .grid_faq {
      grid-template-areas:
           "tt tt tt tt tt tt tt tt tt tt tt tt"
-          "fq fq fq fq fq fq fq fq fq fq fq fq"
+          ". fq fq fq fq fq fq fq fq fq fq ."
           "cta cta cta cta cta cta cta cta cta cta cta cta";
 } 
 

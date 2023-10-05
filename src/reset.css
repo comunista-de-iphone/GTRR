@@ -12,14 +12,17 @@
 :root {
      font-family: OpenDyslexic;
      --bg: #EDE6D3;
-     --black: #25232b;
+     --black: #2D2D2D;
      --white: #F3EFE4;
-     --red: #FF1800;
-     --orange: #F96049;
-     --blush: #FF18006B;
-     --font-size-sm: 18px;
-     --font-size-md: 21px;
-     --font-size-lg: 41px;
+     --red: #FA503C;
+     --orange: #FA503C;
+
+     --font-size-xs: 16px;
+     --font-size-sm: 23px;
+     --font-size-md: 35px;
+     --font-size-lg: 52px;
+     --font-size-xl: 79px;
+
      --letter-spacing: 2%;
      --spacing-xs: 5px;
      --spacing-sm: 10px;
@@ -184,4 +187,3 @@ body {
      width: 100%;
      overflow-x: hidden;
 }
-

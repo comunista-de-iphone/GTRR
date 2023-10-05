@@ -31,27 +31,33 @@ const content = [
   {
     id: 4, toggle: false, title: 'Quais ferramentas a Guilda utiliza?', paragraph: `
     A Guilda tem a política de usar softwares de código aberto (open source) como uma
-    afirmação política e pela ampla disponibilidade destes.<br />
+    afirmação política e pela ampla disponibilidade destes.
+    
     Quanto à transcrição, costumamos realizá - la em arquivo.txt porque é o mais compatível com os
     softwares de legendagem.Aceitamos o uso de qualquer aplicativo ou programa não pirateado que
-    suporte esse formato.<br />
+    suporte esse formato.
+    
     Quanto à legendagem, costumamos usar o Aegisub por sua simplicidade e por termos membros experientes
     nele.Inclusive, realizamos oficinas de legendagem com o Aegisub, nas quais o nosso manual de
     legendagem é baseado.Apesar disso, outros programas de legendagem com código aberto podem ser
-    utilizados – desde que isso seja acordado com seu revisor e com seus colegas de tradução.<br />
+    utilizados – desde que isso seja acordado com seu revisor e com seus colegas de tradução.
+    
     Quanto à tradução, usamos sempre o OmegaT, pois ele é o melhor para a função disponível em código
     aberto.O uso do OmegaT para trabalhos de tradução é inegociável.Também oferecemos oficinas sobre
-    esse software.<br />
+    esse software.
+    
     Por fim, salvamos nossa memória de tradução através do GitHub e pedimos que os tradutores evitem
     usar inteligência artificial / machine translation, pois a Guilda prioriza o caráter formativo e a
     qualidade sobre uma suposta rapidez.` },
   {
     id: 5, toggle: false, title: 'Como funciona o processo de curadoria?', paragraph: `
     Resumidamente, os projetos podem ser sugeridos à curadoria através deste
-    <strong>formulário</strong>. A curadoria analisa e dá uma nota para a sugestão baseando-se em fatores como tipo de mídia,
-    qualidade, complexidade e extensão do material. Caso o projeto tenha uma boa nota em relação aos
-    demais, recrutamos um gerente de projeto dentro do nosso núcleo mais engajado e abrimos as
-    inscrições para as funções necessárias. <br />
+    <strong>formulário</strong>. A curadoria analisa e dá uma nota para a sugestão baseando-se 
+    em fatores como tipo de mídia, qualidade, complexidade e extensão do material. 
+    Caso o projeto tenha uma boa nota em relação aos demais, recrutamos um 
+    gerente de projeto dentro do nosso núcleo mais engajado e abrimos as
+    inscrições para as funções necessárias.
+    
     imagem aqui - imagem aqui - imagem aqui` },
   {
     id: 6, toggle: false, title: 'Sou neurodivergente, acham que eu terei dificuldade em participar?', paragraph: `
