@@ -24,7 +24,7 @@
      grid-template-columns: repeat(12, 1fr);
      grid-template-rows: auto;
      place-items: center;
-     row-gap: 3rem;
+     gap: 2rem;
 }
 
 .footer {

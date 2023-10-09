@@ -1,49 +1,47 @@
 .grid_faq {
      grid-template-areas:
-          "tt tt tt tt tt tt tt tt tt tt tt tt"
+          ". tt tt tt tt tt tt tt tt tt tt ."
           ". fq fq fq fq fq fq fq fq fq fq ."
           "cta cta cta cta cta cta cta cta cta cta cta cta";
 } 
 
 .title {
      grid-area: tt;
-     width: 100%;
 }
 
 .faq { 
      grid-area: fq;
-     width: 100%;
 }
 
 .call_to_action {
      grid-area: cta;
-     width: 100%;
      text-align: right;
 }
 
 
-
-
-.title h1 {
-     font-size: 81px;
+.title h1{
+     display: block;
+     background-color: var(--black);
+     color: var(--white);
+     text-align: center;
+     letter-spacing: 0.02em;
+     border-radius: var(--border-radius-sm);
 }
 
 .show_text {
-     margin: 46px 0;
+     margin: 32px 0;
 }
 
 .show_text h3 {
-     font-family: MolotGTRR;
      text-transform: uppercase;
-     color: var(--bg);
+     color: var(--white);
 }
 
 .toggle_content {
      background-color: var(--black);
      padding: 18px 25px;
-     border-radius: 5px;
-     color: white;
-     font-size: 20px;
+     border-radius: var(--border-radius-sm);
+     color: var(--white);
      cursor: pointer;
 
      display: flex;
@@ -55,14 +53,4 @@
 .toggle_content span {
      font-size: 26px;
      font-weight: 800;
-}
-
-.show {
-     line-height: 150%;
-     font-weight: 400;
-     padding: 16px 0;
-}
-
-.call_to_action .cta_left::before {
-     height: 75px;
 }

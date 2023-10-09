@@ -11,10 +11,8 @@
 /* variáveis */
 :root {
      font-family: OpenDyslexic;
-     --bg: #EDE6D3;
      --black: #2D2D2D;
-     --white: #F3EFE4;
-     --red: #FA503C;
+     --white: #EDE6D3;
      --orange: #FA503C;
 
      --font-size-xs: 16px;
@@ -29,20 +27,19 @@
      --spacing-md2: 20px;
      --spacing-md: 30px;
      --spacing-xl: 100px;
-     --border-radius-lg: 16px;
-     --border-radius-md: 8px;
-     --border-radius-sm: 4px;
      --fontfamily: MolotGTRR;
-
+     
      /* padding */
      --p1: 40px 0;
      --p2: 30px 0;
      --p3: 20px 0;
      --p4: 10px 0;
      --p5: 5px 0;
-     /* bordas  */
-     --br1: 12px;
-     --br2: 6px;
+     
+     /* bordas */
+     --border-radius-lg: 12px;
+     --border-radius-md: 8px;
+     --border-radius-sm: 4px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -183,7 +180,7 @@ table {
 }
 
 body {
-     background-color: var(--bg);
+     background-color: var(--white);
      width: 100%;
      overflow-x: hidden;
 }

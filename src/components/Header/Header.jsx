@@ -19,6 +19,11 @@ const Header = () => {
                <nav className={styles.nav_options}>
                     <Link className={styles.nav_item} to="/">INÍCIO</Link>
                     <Link className={styles.nav_item} to="/primeiros-passos">PRIMEIROS PASSOS</Link>
+
+
+                    <Link className={styles.nav_item} to="/nossos-processos">PROCESSOS</Link>
+
+
                     <div className={styles.sub_nav}>
                          <button className={styles.sub_nav_btn}>SOBRE <img src={Carat} alt="(+)" /></button>
                          <div className={styles.sub_nav_content}>
@@ -39,7 +44,7 @@ const Header = () => {
                </nav>
 
 
-               <div className={styles.hamburger_menu}>
+               {/* <div className={styles.hamburger_menu}>
 
                     <input className={styles.hamburger_checkbox} type="checkbox" name="" id="" /> 
                     <div className={styles.hamburger_lines}>
@@ -64,7 +69,7 @@ const Header = () => {
                               <li><Link to="/finalizados">PROJETOS FINALIZADOS</Link></li>
                          </ul>
                     </div>
-               </div>
+               </div> */}
           </header>
      )
 }

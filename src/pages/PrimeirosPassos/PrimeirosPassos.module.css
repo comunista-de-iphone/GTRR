@@ -76,17 +76,7 @@
      margin-top: var(--spacing-sm);
 }
 
-.segundo .cta-right::before {
-     height: 60px;
-}
-
 .segundo .medo {
      margin-top: 100px;
      margin-bottom: 20px;
-     font-size: 35px;
 }
-
-.see_more .cta-right::before {
-     height: 60px;
-}
-

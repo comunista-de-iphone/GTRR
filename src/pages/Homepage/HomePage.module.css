@@ -4,7 +4,7 @@
           ". . intro intro intro intro intro intro intro intro . ."
           "cta cta cta cta cta cta cta cta cta . . ."
           ". . . ajuda ajuda ajuda ajuda ajuda ajuda . . ."
-          ". goal goal goal goal goal goal goal . . . .";
+          ". . goal goal goal goal goal goal goal . . .";
 }
 
 .imagem {
@@ -14,8 +14,6 @@
 
 .apresentacao {
      grid-area: intro;
-     padding: var(--p4);
-     width: 100%;
 }
 
 .call_to_action {
@@ -24,17 +22,11 @@
 
 .ajudar {
      grid-area: ajuda;
-     padding: var(--p4);
-     width: 100%;
 }
 
 .objetivo {
      grid-area: goal;
-     padding: var(--p4);
-     width: 100%;
-     
 }
-
 
 
 
@@ -53,47 +45,12 @@
      margin-top: var(--spacing-md);
 }
 
-.objetivo p {
-     text-align: right;
-}
-
 .objetivo .outside_links {
      display: flex;
      align-items: center;
      justify-content: flex-end;
      gap: var(--spacing-md);
      margin-top: var(--spacing-md);
-}
-
-/* erro  */
-@media (max-width: 768px) {
-     .main-grid {
-          grid-template-areas:
-               "hd hd hd hd hd hd hd hd hd hd hd hd"
-               ". im im im im im im im im im im ."
-               "ap ap ap ap ap ap ap ap ap ap ap ap"
-               "ca ca ca ca ca ca ca ca ca ca ca ca"
-               "aj aj aj aj aj aj aj aj aj aj aj aj"
-               "ob ob ob ob ob ob ob ob ob ob ob ."
-               "ft ft ft ft ft ft ft ft ft ft ft ft";
-     }
-}
-
-
-
-
-
-
-.block_title {
-     font-size: 41px;
-     display: inline;
-     background-color: var(--black);
-     color: var(--bg);
-     line-height: 150%;
-     text-align: center;
-     letter-spacing: 0.02em;
-     padding: var(--spacing-sm);
-     padding-bottom: var(--spacing-xs);
 }
 
 .button_link {
@@ -106,66 +63,6 @@
      padding: 15px 39px 15px 42px;
 }
 
-
-.right_line_title {
-     text-align: left;
-}
-
-.right_line_title::before {
-     display: block;
-     content: '';
-     border-bottom: 3px solid var(--black);
-     position: relative;
-     top: 1.5em;
-     width: 200%;
-     z-index: -1;
-}
-
-.left_line_title {
-     text-align: right;
-}
-
-.left_line_title::before {
-     display: block;
-     content: '';
-     border-bottom: 3px solid var(--black);
-     position: relative;
-     top: 1.5em;
-     left: -50%;
-     width: 150%;
-     z-index: -1;
-}
-
-/* barra preta */
-.cta_left {
-     display: flex;
-     align-items: center;
-     justify-content: flex-end;
-     gap: var(--spacing-md);
-     margin: 50px 0px;
-}
-
-.cta_right {
-     display: inline-flex;
-     align-items: center;
-     justify-content: flex-start;
-     gap: var(--spacing-md);
-     margin: 50px 0px;
-}
-
-.cta_left::before,
-.cta_right::before {
-     display: block;
-     content: '';
-     background-color: var(--black);
-     position: absolute;
-     width: 100%;
-     height: 100px;
-     z-index: -1;
-     border-radius: var(--br2);
-}
-
-/* barra preta */
 
 a.link_button {
      font-family: MolotGTRR;
@@ -189,7 +86,7 @@ a.link_arrow {
      gap: var(--spacing-sm);
      color: var(--white);
      font-size: var(--font-size-md);
-
+     
      margin: 0px var(--spacing-md);
      white-space: nowrap;
 }
@@ -242,4 +139,19 @@ div.info_list li>ul>li::before {
      margin: 0 var(--spacing-sm);
 }
 
+
+
+/* erro  */
+@media (max-width: 768px) {
+     .main-grid {
+          grid-template-areas:
+               "hd hd hd hd hd hd hd hd hd hd hd hd"
+               ". im im im im im im im im im im ."
+               "ap ap ap ap ap ap ap ap ap ap ap ap"
+               "ca ca ca ca ca ca ca ca ca ca ca ca"
+               "aj aj aj aj aj aj aj aj aj aj aj aj"
+               "ob ob ob ob ob ob ob ob ob ob ob ."
+               "ft ft ft ft ft ft ft ft ft ft ft ft";
+     }
+}
 /* /info-list */

@@ -31,36 +31,30 @@ const content = [
   {
     id: 4, toggle: false, title: 'Quais ferramentas a Guilda utiliza?', paragraph: `
     A Guilda tem a política de usar softwares de código aberto (open source) como uma
-    afirmação política e pela ampla disponibilidade destes.
-    
-    Quanto à transcrição, costumamos realizá - la em arquivo.txt porque é o mais compatível com os
-    softwares de legendagem.Aceitamos o uso de qualquer aplicativo ou programa não pirateado que
-    suporte esse formato.
-    
+    afirmação política e pela ampla disponibilidade destes.<br />
+    Quanto à transcrição, costumamos realizá-la em arquivo.txt porque é o mais compatível com os
+    softwares de legendagem. Aceitamos o uso de qualquer aplicativo ou programa não pirateado que
+    suporte esse formato.<br />
     Quanto à legendagem, costumamos usar o Aegisub por sua simplicidade e por termos membros experientes
-    nele.Inclusive, realizamos oficinas de legendagem com o Aegisub, nas quais o nosso manual de
+    nele. Inclusive, realizamos oficinas de legendagem com o Aegisub, nas quais o nosso manual de
     legendagem é baseado.Apesar disso, outros programas de legendagem com código aberto podem ser
-    utilizados – desde que isso seja acordado com seu revisor e com seus colegas de tradução.
-    
+    utilizados – desde que isso seja acordado com seu revisor e com seus colegas de tradução.<br />
     Quanto à tradução, usamos sempre o OmegaT, pois ele é o melhor para a função disponível em código
     aberto.O uso do OmegaT para trabalhos de tradução é inegociável.Também oferecemos oficinas sobre
-    esse software.
-    
+    esse software.<br />
     Por fim, salvamos nossa memória de tradução através do GitHub e pedimos que os tradutores evitem
     usar inteligência artificial / machine translation, pois a Guilda prioriza o caráter formativo e a
     qualidade sobre uma suposta rapidez.` },
   {
     id: 5, toggle: false, title: 'Como funciona o processo de curadoria?', paragraph: `
-    Resumidamente, os projetos podem ser sugeridos à curadoria através deste
-    <strong>formulário</strong>. A curadoria analisa e dá uma nota para a sugestão baseando-se 
-    em fatores como tipo de mídia, qualidade, complexidade e extensão do material. 
-    Caso o projeto tenha uma boa nota em relação aos demais, recrutamos um 
-    gerente de projeto dentro do nosso núcleo mais engajado e abrimos as
-    inscrições para as funções necessárias.
-    
+    Resumidamente, os projetos podem ser sugeridos à curadoria através deste formulário.<br />
+    A curadoria analisa e dá uma nota para a sugestão baseando-se em fatores como tipo de mídia,
+    qualidade, complexidade e extensão do material. Caso o projeto tenha uma boa nota em relação aos
+    demais, recrutamos um gerente de projeto dentro do nosso núcleo mais engajado e abrimos as
+    inscrições para as funções necessárias.<br />
     imagem aqui - imagem aqui - imagem aqui` },
   {
-    id: 6, toggle: false, title: 'Sou neurodivergente, acham que eu terei dificuldade em participar?', paragraph: `
+    id: 6, toggle: false, title: 'Sou neurodivergente, terei dificuldade em participar?', paragraph: `
     De forma alguma. Na verdade, os neurotípicos são minoria aqui. Nos esforçamos sempre
     para criar um ambiente inclusivo e acolhedor, com foco na qualidade sobre a produtividade. Mas isso
     vai do seu critério, possibilidade e conforto, é claro.` },
@@ -89,26 +83,26 @@ const Faq = () => {
   return (
     <main className={`grid ${styles.grid_faq}`}>
       <section className={styles.title}>
-        <h1><span className='highlight'>perguntas frequentes</span></h1>
+        <h1><span>perguntas frequentes</span></h1>
       </section>
 
 
       <section className={styles.faq}>
-        {contente.map((cont) => (
+        {contente.map(cont => 
           <div className={styles.show_text} key={cont.id}>
             <div className={styles.toggle_content} onClick={() => handleToggle(cont.id)}>
               <h3>{cont.title}</h3>
               <span>{cont.toggle ? '-' : '+'}</span>
             </div>
-            <p className='show' style={cont.toggle ? { display: 'block', whiteSpace: 'pre-line' } : { display: 'none' }}>{cont.paragraph.replace(/<br \/>/g, '\n')}</p>
+            {cont.toggle ? <p>{cont.paragraph}</p> : null}
           </div>
-        ))}
+        )}
       </section>
 
 
       <section className={`call-to-action ${styles.call_to_action}`}>
         <div className="cta-left">
-          <a href="#" className={`link-arrow ${styles.link_arrow}`}>TEM ALGUMA DÚVIDA NÃO RESPONDIDA? NOS MANDE UM EMAIL</a>
+          <a href="#" className={`link-button ${styles.link_arrow}`}>DÚVIDA NÃO RESPONDIDA? NOS MANDE UM EMAIL</a>
         </div>
         <p>Ou nos pergunte em nossas redes sociais!</p>
       </section>

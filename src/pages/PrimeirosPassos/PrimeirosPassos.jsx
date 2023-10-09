@@ -58,7 +58,7 @@ const PrimeirosPassos = () => {
 
 
       <section className={styles.primeiros_passos}>
-        <h1 className="right-line-title">PRIMEIROS PASSOS</h1>
+        <h1 className="left right-line-title">PRIMEIROS PASSOS</h1>
         <p>Agora que você já entendeu, em linhas gerais, o que
           fazemos, aqui vão os primeiros passos para começar:</p>
       </section>
@@ -113,9 +113,9 @@ const PrimeirosPassos = () => {
         <p>Se tiver alguma dúvida, mande sua pergunta em nossas redes
           sociais ou em nosso tópico na Soberana.</p>
         <div className="cta-right">
-          <a href="#" className="link-arrow">FORMULÁRIO DE INSCRIÇÃO</a>
+          <a href="#" className="link-button">FORMULÁRIO DE INSCRIÇÃO</a>
         </div>
-        <h2 className={`right-line-title ${styles.medo}`}>MEDO PELA FALTA DE EXPERIÊNCIA?</h2>
+        <h2 className={`left right-line-title ${styles.medo}`}>MEDO PELA FALTA DE EXPERIÊNCIA?</h2>
         <p>Não se preocupe! Como prezamos com a qualidade dos nossos
           conteúdos e com a sua aprendizagem, é norma padrão da GTRR
           que tradutores novatos fiquem sob a supervisão de tradutores
@@ -126,7 +126,7 @@ const PrimeirosPassos = () => {
 
       <section className={styles.see_more}>
         <div className="cta-right">
-          <a href="#" className="link-arrow">VEJA MAIS SOBRE NOSSOS PROCESSOS</a>
+          <a href="#" className="link-button">VEJA MAIS SOBRE NOSSOS PROCESSOS</a>
         </div>
       </section>
 

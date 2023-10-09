@@ -12,6 +12,7 @@ import EmAndamento from './pages/EmAndamento/EmAndamento'
 import Finalizados from './pages/Finalizados/Finalizados'
 import SugiraProjeto from './pages/SugiraProjeto/SugiraProjeto'
 import Error from './pages/Error/Error'
+import Processos from './pages/Processos/Processos';
 import './app.css';
 import './grid.css';
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='/' element={<HomePage />} />
           <Route path='/primeiros-passos' element={<PrimeirosPassos />} />
           <Route path='/faq' element={<Faq />} />
+          <Route path='/nossos-processos' element={<Processos />} />
           <Route path='/manifesto' element={<Manifesto />} />
           <Route path='/estatuto' element={<Estatuto />} />
           <Route path='/em-andamento' element={<EmAndamento />} />
