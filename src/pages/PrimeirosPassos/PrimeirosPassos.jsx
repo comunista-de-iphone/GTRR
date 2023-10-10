@@ -113,7 +113,7 @@ const PrimeirosPassos = () => {
         <p>Se tiver alguma dúvida, mande sua pergunta em nossas redes
           sociais ou em nosso tópico na Soberana.</p>
         <div className="cta-right">
-          <a href="#" className="link-button">FORMULÁRIO DE INSCRIÇÃO</a>
+          <a href="#" className="link-button">VISITE NOSSO TÓPICO NA SOBERANA</a>
         </div>
         <h2 className={`left right-line-title ${styles.medo}`}>MEDO PELA FALTA DE EXPERIÊNCIA?</h2>
         <p>Não se preocupe! Como prezamos com a qualidade dos nossos
