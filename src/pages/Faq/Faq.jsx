@@ -92,15 +92,15 @@ const Faq = () => {
               <h3>{element.title}</h3>
               <span>{element.toggle ? '-' : '+'}</span>
             </div>
-            {element.toggle && <p>{element.paragraph}</p>}
+            {element.toggle && <p>{element.paragraph.replace(/<br \/>/g, '\n')}</p>}
           </div>
         )}
       </section>
 
 
-      <section className={`right ${styles.call_to_action}`}>
+      <section className={`${styles.call_to_action}`}>
         <div className="left cta-left">
-          <Link to={'/'} className={`link-button ${styles.link_arrow}`}>DÚVIDA NÃO RESPONDIDA? NOS MANDE UM EMAIL</Link>
+          <Link to={'/'} className={`link-button link-arrow`}>DÚVIDA NÃO RESPONDIDA? NOS MANDE UM EMAIL</Link>
         </div>
         <p>Ou nos pergunte em nossas redes sociais!</p>
       </section>

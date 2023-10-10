@@ -184,14 +184,13 @@ a {
 }
 
 .link-arrow {
-     margin-right: var(--spacing-md);
-     display: inline-flex;
-     align-items: center;
      gap: var(--spacing-sm);
-     color: var(--white);
-     font-size: var(--font-size-sm);
      margin: 0px var(--spacing-md);
      white-space: nowrap;
+     display: inline-flex;
+     align-items: center;
+     color: var(--white);
+     font-size: var(--font-size-sm);
 }
 
 .link-arrow::after {

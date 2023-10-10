@@ -1,8 +1,8 @@
 .grid_faq {
      grid-template-areas:
           ". . tt tt tt tt tt tt tt tt . ."
-          "faq faq faq faq faq faq faq faq faq faq faq faq"
-          ". . cta cta cta cta cta cta cta cta . .";
+          ". . faq faq faq faq faq faq faq faq . ."
+          ". . . . cta cta cta cta cta cta . .";
 }
 
 .title {
@@ -22,6 +22,7 @@
      display: block;
      background-color: var(--black);
      color: var(--white);
+     padding: 0 24px;
      text-align: center;
      letter-spacing: 0.02em;
      border-radius: var(--border-radius-sm);
@@ -29,17 +30,16 @@
 
 .show_text {
      margin: 32px 0;
-     width: 100%;
 }
 
-
 .show_text p {
-     width: 100%;
+     padding: 0 8px;
+     white-space:pre-line;
 }
 
 .toggle_content {
      background-color: var(--black);
-     padding: 18px 25px;
+     padding: 16px 24px;
      color: var(--white);
      cursor: pointer;
      display: flex;
