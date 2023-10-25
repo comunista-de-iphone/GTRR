@@ -1,0 +1,19 @@
+.table {
+  width: 100%;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.table thead {
+  color: var(--white);
+  background: var(--black);
+  border: 2px solid var(--black);
+  height: 64px;
+}
+
+.table tbody td {
+  border: 2px solid var(--black);
+  height: 64px;
+}
