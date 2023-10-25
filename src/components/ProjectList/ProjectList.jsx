@@ -2,7 +2,6 @@ import styles from './ProjectList.module.css'
 
 
 const ProjectList = ({projects}) => {
-  console.log(projects);
   return (
     <table className={styles.table}>
       <thead>
@@ -13,13 +12,8 @@ const ProjectList = ({projects}) => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Proj 1</td>
-          <td>10/06/2023</td>
-          <td>Google Drive</td>
-        </tr>
         {projects.map(p => (
-          <tr>
+          <tr key={p.id}>
             <td>{p.name}</td>
             <td>{p.date}</td>
             <td>{p.link}</td>

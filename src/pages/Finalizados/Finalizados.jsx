@@ -11,7 +11,7 @@ const Finalizados = () => {
     setLoading(true)
     fetch("projects.json")
       .then(response => response.json())
-      .then(json => setProjects(json))
+      .then(json => setProjects(json.filter(p => p.status == 2)))
       .finally(() => {
         setLoading(false)
       })
