@@ -1,6 +1,7 @@
 import React from 'react'
-import BemVinde from '../../assets/GTRR-bemvinde.svg'
-import styles from './PrimeirosPassos.module.css'
+import BemVinde from '../../assets/GTRR-bemvinde.svg';
+import Arrow2 from '../../assets/Arrow-2.svg';
+import styles from './PrimeirosPassos.module.css';
 
 
 const PrimeirosPassos = () => {
@@ -25,27 +26,47 @@ const PrimeirosPassos = () => {
         <div className="info-list">
           <h2>O QUE FAZEMOS</h2>
           <ul>
-            <li>Traduzindo textos, vídeos, memes, etc, de relevância para a esquerda radical
+            <li><img src={Arrow2} className='arrow' alt="a" /> Traduzindo textos, vídeos, memes, etc, de relevância para a esquerda radical
               <ul>
-                <li>Que podem ser inéditos em língua portuguesa (tradução), OU</li>
-                <li>Nossos melhores materiais a serem internacionalizados (versão);</li>
+                <li className='list-dot'>Que podem ser inéditos em língua portuguesa (tradução), OU</li>
+                <li className='list-dot'>Nossos melhores materiais a serem internacionalizados (versão);</li>
               </ul>
             </li>
-            <li>Agregando na formação dos novos profissionais da área;</li>
-            <li>Criando um fluxo integrado de trabalho para a colaboração eficiente;</li>
-            <li>Utilizando sempre recursos de código aberto como ato político;</li>
-            <li>Cultivando a cultura de traduções acessíveis.</li>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Agregando na formação dos novos profissionais da área;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Criando um fluxo integrado de trabalho para a colaboração eficiente;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Utilizando sempre recursos de código aberto como ato político;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Cultivando a cultura de traduções acessíveis.</li>
+            </div>
           </ul>
         </div>
         <div className="info-list">
           <h2>O QUE NÃO FAZEMOS</h2>
           <ul>
-            <li>Não pretendemos competir com esforços editoriais já existentes;</li>
-            <li>Não traduzimos clássicos já estabelecidos e publicados;</li>
-            <li>Não traduzimos qualquer conteúdo, pois temos uma curadoria para analisar as sugestões;</li>
-            <li>Não somos uma editora;</li>
-            <li>Não somos uma cooperativa profissional, apesar de termos integrantes com experiência na área;</li>
-            <li>Não somos vinculados a qualquer instituição, partido ou associação política e, da mesma forma, não exigimos tal coisa de nossos contribuintes.</li>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não pretendemos competir com esforços editoriais já existentes;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não traduzimos clássicos já estabelecidos e publicados;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não traduzimos qualquer conteúdo, pois temos uma curadoria para analisar as sugestões;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não somos uma editora;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não somos uma cooperativa profissional, apesar de termos integrantes com experiência na área;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não somos vinculados a qualquer instituição, partido ou associação política e, da mesma forma, não exigimos tal coisa de nossos contribuintes.</li>
+            </div>
           </ul>
         </div>
       </section>
@@ -95,7 +116,7 @@ const PrimeirosPassos = () => {
         <div className="cta-left">
           <a href="#" className="link-button">FORMULÁRIO DE INSCRIÇÃO</a>
         </div>
-        <p style={{textAlign: 'right'}}>Uma vez preenchido o formulário, saberemos que se
+        <p style={{ textAlign: 'right' }}>Uma vez preenchido o formulário, saberemos que se
           dispôs a ajudar e teremos você em conta na hora de abrir
           chamados para projetos.</p>
       </section>

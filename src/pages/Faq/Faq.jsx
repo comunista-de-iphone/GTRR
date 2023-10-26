@@ -98,12 +98,13 @@ const Faq = () => {
       </section>
 
 
-      <section className={`${styles.call_to_action}`}>
-        <div className="left cta-left">
-          <Link to={'/'} className={`link-button link-arrow`}>DÚVIDA NÃO RESPONDIDA? NOS MANDE UM EMAIL</Link>
+      <section className={`right ${styles.call_to_action}`}>
+        <div className="right cta-left">
+          <Link to={'/'} className={`borda1 link-arrow font-title`}>DÚVIDA NÃO RESPONDIDA? NOS MANDE UM EMAIL</Link>
         </div>
         <p>Ou nos pergunte em nossas redes sociais!</p>
       </section>
+      
     </main>
   );
 };

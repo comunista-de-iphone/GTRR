@@ -45,6 +45,19 @@ a {
      color: var(--black);
 }
 
+.font-text {
+     font-family: OpenDyslexic;
+}
+
+.font-title {
+     font-family: MolotGTRR;
+     font-size: var(--font-size-btn);
+     font-weight: 400;
+     letter-spacing: 2px;
+}
+
+
+
 .borda1 {
      border-radius: var(--border-radius-lg);
 }
@@ -57,6 +70,7 @@ a {
      padding: 0 4px;
      border-radius: var(--border-radius-md);
      background-color: var(--orange);
+     display: inline;
 }
 
 .list-dot {
@@ -96,6 +110,12 @@ a {
      text-transform: uppercase;
 }
 
+.black-fill {
+     background-color: var(--black);
+     padding: 12px 24px;
+     color: var(--white);
+
+}
 
 
 
@@ -162,7 +182,7 @@ a {
 .left-line-title::before {
      display: block;
      content: '';
-     border-bottom: 3px solid var(--black);
+     border-bottom: 2px solid var(--black);
      position: relative;
      top: 1.35em;
      width: 500%;
@@ -197,9 +217,19 @@ a {
      content: url("assets/Arrow-1.svg");
 }
 
+.arrow {
+     width: 16px;
+     color: var(--black);
+     margin: 0 8px;
+}
+
+.list-mg {
+     margin: 8px 0;
+}
+
 /* info-list */
 .info-list {
-     margin: 12px 0;
+     margin: 16px 0;
 }
 
 .info-list h2 {
@@ -217,7 +247,7 @@ a {
 /* lista principal */
 .info-list>ul {
      background-color: var(--orange);
-     padding: 16px 32px;
+     padding: 24px;
      border-radius: var(--border-radius-md);
      list-style-position: inside;
      line-height: 1.5em;
@@ -245,3 +275,18 @@ a {
 }
 
 /* /info-list */
+
+
+
+
+
+/* espaçamento  */
+.primary-margin {
+     margin: var(--primary-top-margin);
+}
+
+.primary-padding {
+     padding: var(--primary-top-padding);
+}
+
+/* espaçamento  */

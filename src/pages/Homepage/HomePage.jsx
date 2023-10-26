@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../../assets/Hero.svg';
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css'
- 
+
 const HomePage = () => {
      return (
           <main className={`grid ${styles.grid_inicio}`}>
@@ -20,9 +20,11 @@ const HomePage = () => {
 
 
                <section className={styles.call_to_action}>
-                    <div className='cta-left'>
-                         <Link to="/primeiros-passos" className={styles.link_button}>PRIMEIROS PASSOS</Link>
-                         <Link to="/manifesto" className={styles.link_arrow}>NOSSO MANIFESTO</Link>
+                    <div className='center cta-full'>
+                         <Link to="/primeiros-passos" className={`white-border borda1 font-title`}>PRIMEIROS PASSOS</Link>
+                         <Link to="/manifesto" className={`white-border borda1 font-title`}>NOSSO MANIFESTO</Link>
+                         {/* <Link to="/primeiros-passos" className={`white-border borda1 ${styles.link_button}`}>PRIMEIROS PASSOS</Link>
+                         <Link to="/manifesto" className={`white-border borda1 ${styles.link_arrow}`}>NOSSO MANIFESTO</Link> */}
                     </div>
                </section>
 
@@ -43,22 +45,23 @@ const HomePage = () => {
                     <p>Você pode saber mais sobre essas funções explorando o nosso site, redes sociais ou perguntando aos
                          membros da GTRR.</p>
 
-                    <div className={styles.outside_links}>
-                         <Link to="/faq" className={styles.button_link}>Veja mais perguntas frequentes</Link>
+                    <div className={`center primary-margin ${styles.outside_links}`}>
+                         <Link to="/faq" className={`black-fill borda1 ${styles.button_link}`}>Veja mais perguntas frequentes</Link>
                     </div>
                </section>
 
 
-               <section className={styles.objetivo}>
-                    <h1 className="left right-line-title">Nosso objetivo</h1>
+               <section className={`primary-padding ${styles.objetivo}`}>
+                    <h1 className="left highlight">Nosso objetivo</h1>
+                    {/* <h1 className="left right-line-title">Nosso objetivo</h1> */}
                     <br />
                     <p className='left'>Somos um coletivo marxista-leninista que atua na disponibilização de materiais de esquerda radical
                          inéditos em língua portuguesa, assim como a internacionalização dos nossos melhores materiais nacionais,
                          enquanto fornecemos formação à nova geração de profissionais de tradução sob uma ótica radical e
                          crítica.</p>
-                    <div className={styles.outside_links}>
-                         <Link to="/manifesto" className={styles.button_link}>MANIFESTO</Link>
-                         <Link to="/estatuto" className={styles.button_link}>ESTATUTO</Link>
+                    <div className={`primary-margin ${styles.outside_links}`}>
+                         <Link to="/manifesto" className={`borda1 black-fill ${styles.button_link}`}>MANIFESTO</Link>
+                         <Link to="/estatuto" className={`borda1 black-fill ${styles.button_link}`}>ESTATUTO</Link>
                     </div>
                </section>
           </main>

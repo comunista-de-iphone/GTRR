@@ -2,7 +2,7 @@
      grid-template-areas:
           ". . tt tt tt tt tt tt tt tt . ."
           ". . faq faq faq faq faq faq faq faq . ."
-          ". . . . cta cta cta cta cta cta . .";
+          ". . cta cta cta cta cta cta cta cta cta cta";
 }
 
 .title {
@@ -16,6 +16,12 @@
 
 .call_to_action {
      grid-area: cta;
+}
+
+
+
+.call_to_action p {
+     font-weight: 800;
 }
 
 .title h1 {

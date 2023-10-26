@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import programa from '../../assets/programas.png';
+import Arrow2 from '../../assets/Arrow-2.svg';
 import styles from './Processos.module.css';
 
 const Processos = () => {
@@ -19,16 +20,16 @@ const Processos = () => {
                     <p className='center'>O processo dos trabalhos funciona da seguinte forma:</p>
                     <div className='info-list'>
                          <ul>
-                              <li>As sugestões de conteúdo são feitas para a Curadoria da GTRR (entenda como funciona na próxima seção)</li>
+                              <li><img src={Arrow2} className='arrow' alt="a" /> As sugestões de conteúdo são feitas para a Curadoria da GTRR (entenda como funciona na próxima seção)</li>
                               <li className='list-dot'>Uma vez que a Curadoria aprova um conteúdo, há um chamado para constituir o projeto;</li>
                               <li className='list-dot'>O chamado visa achar camaradas com disposição a desempenhar as seguintes funções: </li>
-                              <li>Gerentes de projeto </li>
-                              <li>Tradutores</li>
-                              <li>Revisores </li>
-                              <li>Preparadores de texto </li>
-                              <li>Temporizadores (caso seja legenda de vídeo) </li>
-                              <li>Transcritores (caso necessário) </li>
-                              <li>Designers (caso seja material gráfico e/ou para diagramação)</li>
+                              <li><img src={Arrow2} className='arrow' alt="a" /> Gerentes de projeto </li>
+                              <li><img src={Arrow2} className='arrow' alt="a" /> Tradutores</li>
+                              <li><img src={Arrow2} className='arrow' alt="a" /> Revisores </li>
+                              <li><img src={Arrow2} className='arrow' alt="a" /> Preparadores de texto </li>
+                              <li><img src={Arrow2} className='arrow' alt="a" /> Temporizadores (caso seja legenda de vídeo) </li>
+                              <li><img src={Arrow2} className='arrow' alt="a" /> Transcritores (caso necessário) </li>
+                              <li><img src={Arrow2} className='arrow' alt="a" /> Designers (caso seja material gráfico e/ou para diagramação)</li>
                               <li className='list-dot'>O projeto segue por suas várias etapas com o apoio da gerência de projeto para garantir o cumprimento de cada ponto com qualidade;</li>
                               <li className='list-dot'>O projeto é entregue e compartilhado na comunidade, onde todos terão acesso a ele e o consumirão em uma forma de mostra-feedback coletiva,
                                    para que não nos alienemos do nosso trabalho.</li>
@@ -41,16 +42,24 @@ const Processos = () => {
                     <h2>apontamentos gerais</h2>
                     <div className='info-list'>
                          <ul>
-                              <li className='list-dot'>É sempre previsto que os projetos contem com um tradutor (ou mais) e um revisor (ou mais, igualmente). Desta forma criamos um ambiente de troca de
-                                   experiências e conhecimentos;</li>
-                              <li className='list-dot'>Durante a tradução dos projetos o uso de pronomes deve ser evitado ao máximo, mantendo-se a integridade do texto.
-                                   Sendo impossível a exclusão de pronomes masculinos ou femininos, caberá à dupla a determinação de um pronome padrão para o texto
-                                   (masculino ou feminino) que deverá ser mantido por todo o texto, acompanhada de uma nota de tradução no início do documento final.
-                                   O uso de neo-pronomes (ex.: elu/delu) ocorrerá somente quando os mesmos existirem no texto de origem;</li>
-                              <li className='list-dot'>É importante lembrar que projetos individuais
-                                   serão considerados como tal e não obterão apoio da estrutura centralizada da GTRR;</li>
-                              <li className='list-dot'>Projetos relacionados à Soberana ou a quaisquer outros coletivos
-                                   somente serão aprovados sob consentimento ou parceria com os mesmos, em respeito a seu trabalho e atuação.</li>
+                              <div className='list-mg'>
+                                   <li><img src={Arrow2} className='arrow' alt="a" />É sempre previsto que os projetos contem com um tradutor (ou mais) e um revisor (ou mais, igualmente). Desta forma criamos um ambiente de troca de
+                                        experiências e conhecimentos;</li>
+                              </div>
+                              <div className='list-mg'>
+                                   <li><img src={Arrow2} className='arrow' alt="a" />Durante a tradução dos projetos o uso de pronomes deve ser evitado ao máximo, mantendo-se a integridade do texto.
+                                        Sendo impossível a exclusão de pronomes masculinos ou femininos, caberá à dupla a determinação de um pronome padrão para o texto
+                                        (masculino ou feminino) que deverá ser mantido por todo o texto, acompanhada de uma nota de tradução no início do documento final.
+                                        O uso de neo-pronomes (ex.: elu/delu) ocorrerá somente quando os mesmos existirem no texto de origem;</li>
+                              </div>
+                              <div className='list-mg'>
+                                   <li><img src={Arrow2} className='arrow' alt="a" />É importante lembrar que projetos individuais
+                                        serão considerados como tal e não obterão apoio da estrutura centralizada da GTRR;</li>
+                              </div>
+                              <div className='list-mg'>
+                                   <li><img src={Arrow2} className='arrow' alt="a" />Projetos relacionados à Soberana ou a quaisquer outros coletivos
+                                        somente serão aprovados sob consentimento ou parceria com os mesmos, em respeito a seu trabalho e atuação.</li>
+                              </div>
                          </ul>
                     </div>
                     <p className='center'>Caso você tenha dúvidas, fale conosco em nossas redes sociais para saná-las. Os membros te ajudarão como puderem.</p>

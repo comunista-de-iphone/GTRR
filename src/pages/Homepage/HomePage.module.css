@@ -2,7 +2,7 @@
      grid-template-areas:
           ". . img img img img img img img img . ."
           ". . intro intro intro intro intro intro intro intro . ."
-          "cta cta cta cta cta cta cta cta cta . . ."
+          "cta cta cta cta cta cta cta cta cta cta cta cta"
           ". . . ajuda ajuda ajuda ajuda ajuda ajuda . . ."
           ". . goal goal goal goal goal goal goal . . .";
 }
@@ -48,27 +48,26 @@
 .objetivo .outside_links {
      display: flex;
      align-items: center;
-     justify-content: flex-end;
+     justify-content: center;
      gap: var(--spacing-md);
      margin-top: var(--spacing-md);
 }
 
 .button_link {
-     white-space: nowrap;
-     border: 3px solid var(--black);
+     border: 2px solid var(--black);
      letter-spacing: 0.02em;
      font-family: var(--fontfamily);
-     font-size: var(--font-size-md);
+     font-size: var(--font-size-btn);
      border-radius: 12px;
      padding: 15px 39px 15px 42px;
 }
 
 
-a.link_button {
+.link_button {
      font-family: MolotGTRR;
      font-size: var(--font-size-md);
      color: var(--white);
-     border: 3px solid var(--white);
+     border: 2px solid var(--white);
      border-radius: var(--border-radius-lg);
      padding: 15px 40px;
      margin: 0px var(--spacing-md);
@@ -79,19 +78,19 @@ a.link_button {
      letter-spacing: 1.68px;
 }
 
-a.link_arrow {
+.link_arrow {
      margin-right: var(--spacing-md);
      display: inline-flex;
      align-items: center;
      gap: var(--spacing-sm);
      color: var(--white);
      font-size: var(--font-size-md);
-     
+
      margin: 0px var(--spacing-md);
      white-space: nowrap;
 }
 
-a.link_arrow::after {
+.link_arrow::after {
      content: url("../../assets/img/Arrow-1.svg");
 }
 
@@ -154,4 +153,14 @@ div.info_list li>ul>li::before {
                "ft ft ft ft ft ft ft ft ft ft ft ft";
      }
 }
+
 /* /info-list */
+
+
+
+/* espaçamento  */
+.padding-section {
+     padding: var(--primary-padding);
+}
+
+/* espaçamento  */
