@@ -6,20 +6,20 @@ import styles from './HomePage.module.css'
 const HomePage = () => {
      return (
           <main className={`grid ${styles.grid_inicio}`}>
-               <section className={styles.imagem}>
+
+
+               <section className={`padding1 ${styles.imagem}`}>
                     <img src={Hero} alt="GTRR" />
-               </section>
-
-
-               <section className={styles.apresentacao}>
-                    <h1>Muitíssimas<br /> boas-vindas à <span className="highlight">GTRR!</span></h1>
-                    <p>Somos um coletivo centralizado, diverso e independente focado em
+                    <h1>Muitíssimas<br />
+                         boas-vindas à <span className="highlight">GTRR!</span>
+                    </h1>
+                    <p className='center'>Somos um coletivo centralizado, diverso e independente focado em
                          aprender enquanto disponibilizamos materiais para a formação
                          teórica de comunistas.</p>
                </section>
 
 
-               <section className={styles.call_to_action}>
+               <section className={`${styles.call_to_action}`}>
                     <div className='center cta-full'>
                          <Link to="/primeiros-passos" className={`white-border borda1 font-title`}>PRIMEIROS PASSOS</Link>
                          <Link to="/manifesto" className={`white-border borda1 font-title`}>NOSSO MANIFESTO</Link>
@@ -29,7 +29,7 @@ const HomePage = () => {
                </section>
 
 
-               <section className={styles.ajudar}>
+               <section className={`padding1 ${styles.ajudar}`}>
                     <h1 className={styles.line}>
                          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
                               <path
@@ -51,7 +51,7 @@ const HomePage = () => {
                </section>
 
 
-               <section className={`primary-padding ${styles.objetivo}`}>
+               <section className={`padding1 ${styles.objetivo}`}>
                     <h1 className="left highlight">Nosso objetivo</h1>
                     {/* <h1 className="left right-line-title">Nosso objetivo</h1> */}
                     <br />
@@ -59,7 +59,7 @@ const HomePage = () => {
                          inéditos em língua portuguesa, assim como a internacionalização dos nossos melhores materiais nacionais,
                          enquanto fornecemos formação à nova geração de profissionais de tradução sob uma ótica radical e
                          crítica.</p>
-                    <div className={`primary-margin ${styles.outside_links}`}>
+                    <div className={`${styles.outside_links}`}>
                          <Link to="/manifesto" className={`borda1 black-fill ${styles.button_link}`}>MANIFESTO</Link>
                          <Link to="/estatuto" className={`borda1 black-fill ${styles.button_link}`}>ESTATUTO</Link>
                     </div>

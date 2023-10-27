@@ -8,14 +8,14 @@ const Processos = () => {
      return (
           <main className={`grid ${styles.processo}`}>
 
-               <section className={styles.projeto}>
+               <section className={`padding1 ${styles.projeto}`}>
                     <h1>COMO FUNCIONAM OS PROJETOS?</h1>
                     <p className='center'>O foco da guilda ficará sempre em propostas que possam ser divididas sem sobrecarregar os voluntários.
                          Os trabalhos não serão feitos com determinação de prazos, mas responsabilidade e sinceridade são esperadas de cada camarada que se voluntariar.</p>
                </section>
 
 
-               <section className={styles.fluxo}>
+               <section className={`padding1 ${styles.fluxo}`}>
                     <h2>fluxo de trabalho</h2>
                     <p className='center'>O processo dos trabalhos funciona da seguinte forma:</p>
                     <div className='info-list'>
@@ -38,7 +38,7 @@ const Processos = () => {
                </section>
 
 
-               <section className={styles.apontamento}>
+               <section className={`padding1 ${styles.apontamento}`}>
                     <h2>apontamentos gerais</h2>
                     <div className='info-list'>
                          <ul>
@@ -66,7 +66,7 @@ const Processos = () => {
                </section>
 
 
-               <section className={styles.curadoria}>
+               <section className={`padding1 ${styles.curadoria}`}>
                     <h1 className='left right-line-title'>Curadoria</h1>
                     <h2 className='block-title'>Sugestão de projetos</h2>
                     <p><span className='highlight'>Todos os projetos a serem sugeridos devem ser indicados exclusivamente através do formulário.</span>
@@ -81,7 +81,7 @@ const Processos = () => {
                </section>
 
 
-               <section className={styles.projeto_curado}>
+               <section className={`padding1 ${styles.projeto_curado}`}>
                     <h1 className='block-title'>Como os projetos são curados?</h1>
                     <div className={styles.sides}>
                          <img src={programa} alt="programa" />
@@ -97,7 +97,7 @@ const Processos = () => {
                </section>
 
 
-               <section className={styles.programa}>
+               <section className={`padding1 ${styles.programa}`}>
                     <h1>Programas que usamos</h1>
                     <p className='center'>O mundo da tradução hoje é muito mais que papel, caneta e tinta.
                          Ainda mais quando somos uma guilda composta de camaradas de diferentes lugares do mundo, ligados e organizados pelas “internetes”.
@@ -124,7 +124,7 @@ const Processos = () => {
                </section>
 
 
-               <section className={styles.reuniao}>
+               <section className={`padding1 ${styles.reuniao}`}>
                     <h1>reuniões e atas</h1>
                     <p>Todas as decisões sobre os rumos da GTRR são discutidas e tomadas coletivamente em nossas reuniões mensais.
                          Fique de olho para o anúncio destas, assim como para as consultas prévias em formato de votação sobre os melhores dias e horários.

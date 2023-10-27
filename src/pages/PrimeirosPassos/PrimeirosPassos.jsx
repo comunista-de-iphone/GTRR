@@ -1,6 +1,7 @@
 import React from 'react'
 import BemVinde from '../../assets/GTRR-bemvinde.svg';
 import Arrow2 from '../../assets/Arrow-2.svg';
+import Arrow1 from '../../assets/Arrow-1.svg';
 import styles from './PrimeirosPassos.module.css';
 
 
@@ -8,12 +9,12 @@ const PrimeirosPassos = () => {
   return (
     <main className={`grid ${styles.grid_passos}`}>
 
-      <section className={styles.welcome}>
+      <section className={`padding1 ${styles.welcome}`}>
         <img src={BemVinde} alt="SEJA BEM-VINDE À GTRR" />
       </section>
 
 
-      <section className={styles.paragraph_a}>
+      <section className={`padding1 ${styles.paragraph_a}`}>
         <p>A <span className="highlight">GTRR</span> é um coletivo com o duplo objetivo de: fornecer um percurso formativo para quem quer se profissionalizar
           na área de tradução e revisão e, ao mesmo tempo, disponibilizar materiais inéditos em prol da formação teórica de
           comunistas.</p>
@@ -22,7 +23,7 @@ const PrimeirosPassos = () => {
       </section>
 
 
-      <section className={styles.oque_fazemos}>
+      <section className={`padding1 ${styles.oque_fazemos}`}>
         <div className="info-list">
           <h2>O QUE FAZEMOS</h2>
           <ul>
@@ -46,6 +47,7 @@ const PrimeirosPassos = () => {
             </div>
           </ul>
         </div>
+
         <div className="info-list">
           <h2>O QUE NÃO FAZEMOS</h2>
           <ul>
@@ -72,20 +74,20 @@ const PrimeirosPassos = () => {
       </section>
 
 
-      <section className={styles.paragraph_b}>
+      <section className={`padding1 ${styles.paragraph_b}`}>
         <p>A Guilda é um <span className="highlight">coletivo</span> e, portanto, construída com base na disponibilidade de cada camarada para contribuir com
           seu tempo, inteligência e habilidades sob a organização centralizada e acordada entre todas as partes.</p>
       </section>
 
 
-      <section className={styles.primeiros_passos}>
+      <section className={`padding1 ${styles.primeiros_passos}`}>
         <h1 className="left right-line-title">PRIMEIROS PASSOS</h1>
         <p>Agora que você já entendeu, em linhas gerais, o que
           fazemos, aqui vão os primeiros passos para começar:</p>
       </section>
 
 
-      <section className={styles.primeiro}>
+      <section className={`padding1 ${styles.primeiro}`}>
         <h2 className="block-title">1. CADASTRO NA GUILDA</h2>
         <p>Não importa qual o seu nível ou familiaridade com a
           área de tradução ou revisão, você é bem-vinde.</p>
@@ -98,19 +100,19 @@ const PrimeirosPassos = () => {
           familiaridade e em qual destas áreas você gostaria de
           atuar:</p>
         <div className="info-list">
-          <ul className="arrow">
-            <li>Tradução</li>
-            <li>Revisão</li>
-            <li>Versão (tradução para idioma estrangeiro)</li>
-            <li>Legendagem em preparação de textos</li>
-            <li>Transcrição</li>
-            <li>Gestão de projetos</li>
-            <li>Organização e relações institucionais</li>
-            <li>Redes sociais</li>
-            <li>Design</li>
-            <li>TI</li>
-            <li>Formação</li>
-            <li>Curadoria</li>
+          <ul>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Tradução</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Revisão</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Versão (tradução para idioma estrangeiro)</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Legendagem em preparação de textos</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Transcrição</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Gestão de projetos</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Organização e relações institucionais</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Redes sociais</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Design</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> TI</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Formação</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Curadoria</li>
           </ul>
         </div>
         <div className="cta-left">
@@ -122,7 +124,7 @@ const PrimeirosPassos = () => {
       </section>
 
 
-      <section className={styles.segundo}>
+      <section className={`padding1 ${styles.segundo}`}>
         <h2 className="block-title">2. DÊ UM OI LÁ NO CANAL!</h2>
         <p>Não se acanhe, se apresente lá no tópico e conheça nossa
           comunidade. Sempre haverá alguém para te acolher e ajudar:
@@ -134,7 +136,7 @@ const PrimeirosPassos = () => {
         <p>Se tiver alguma dúvida, mande sua pergunta em nossas redes
           sociais ou em nosso tópico na Soberana.</p>
         <div className="cta-right">
-          <a href="#" className="link-button">VISITE NOSSO TÓPICO NA SOBERANA</a>
+          <a href="#" className="link-button link-arrow">VISITE NOSSO TÓPICO NA SOBERANA</a>
         </div>
         <h2 className={`left right-line-title ${styles.medo}`}>MEDO PELA FALTA DE EXPERIÊNCIA?</h2>
         <p>Não se preocupe! Como prezamos com a qualidade dos nossos
@@ -145,9 +147,9 @@ const PrimeirosPassos = () => {
       </section>
 
 
-      <section className={styles.see_more}>
+      <section className={`padding1 ${styles.see_more}`}>
         <div className="cta-right">
-          <a href="#" className="link-button">VEJA MAIS SOBRE NOSSOS PROCESSOS</a>
+          <a href="#" className="link-button link-arrow">VEJA MAIS SOBRE NOSSOS PROCESSOS</a>
         </div>
       </section>
 
