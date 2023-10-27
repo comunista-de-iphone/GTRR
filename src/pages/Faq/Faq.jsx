@@ -77,17 +77,18 @@ const Faq = () => {
     setcontent(content.map(element => element.id === id ? { ...element, toggle: !element.toggle } : element))
   }
 
+
   return (
     <main className={`grid ${styles.grid_faq}`}>
 
-      <section className={styles.title}>
+      <section className={`${styles.title}`}>
         <h1><span>perguntas frequentes</span></h1>
       </section>
 
 
-      <section className={styles.faq}>
+      <section className={`${styles.faq}`}>
         {content.map(element =>
-          <div className={styles.show_text} key={element.id}>
+          <div className={`${styles.show_text}`} key={element.id}>
             <div className={`borda2 ${styles.toggle_content}`} onClick={() => handleToggle(element.id)}>
               <h3>{element.title}</h3>
               <span>{element.toggle ? '-' : '+'}</span>
@@ -98,12 +99,13 @@ const Faq = () => {
       </section>
 
 
-      <section className={`${styles.call_to_action}`}>
-        <div className="left cta-left">
-          <Link to={'/'} className={`link-button link-arrow`}>DÚVIDA NÃO RESPONDIDA? NOS MANDE UM EMAIL</Link>
+      <section className={`padding1 right ${styles.call_to_action}`}>
+        <div className="padding2 right cta-left">
+          <Link to={'/'} className={`borda1 link-arrow font-title`}>DÚVIDA NÃO RESPONDIDA? NOS MANDE UM EMAIL</Link>
         </div>
         <p>Ou nos pergunte em nossas redes sociais!</p>
       </section>
+      
     </main>
   );
 };

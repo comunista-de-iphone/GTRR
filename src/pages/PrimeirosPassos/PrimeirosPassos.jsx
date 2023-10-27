@@ -1,18 +1,20 @@
 import React from 'react'
-import BemVinde from '../../assets/GTRR-bemvinde.svg'
-import styles from './PrimeirosPassos.module.css'
+import BemVinde from '../../assets/GTRR-bemvinde.svg';
+import Arrow2 from '../../assets/Arrow-2.svg';
+import styles from './PrimeirosPassos.module.css';
+import { Link } from 'react-router-dom';
 
 
 const PrimeirosPassos = () => {
   return (
     <main className={`grid ${styles.grid_passos}`}>
 
-      <section className={styles.welcome}>
+      <section className={`padding1 ${styles.welcome}`}>
         <img src={BemVinde} alt="SEJA BEM-VINDE À GTRR" />
       </section>
 
 
-      <section className={styles.paragraph_a}>
+      <section className={`padding1 ${styles.paragraph_a}`}>
         <p>A <span className="highlight">GTRR</span> é um coletivo com o duplo objetivo de: fornecer um percurso formativo para quem quer se profissionalizar
           na área de tradução e revisão e, ao mesmo tempo, disponibilizar materiais inéditos em prol da formação teórica de
           comunistas.</p>
@@ -21,50 +23,67 @@ const PrimeirosPassos = () => {
       </section>
 
 
-      <section className={styles.oque_fazemos}>
+      <section className={` ${styles.oque_fazemos}`}>
         <div className="info-list">
           <h2>O QUE FAZEMOS</h2>
           <ul>
-            <li>Traduzindo textos, vídeos, memes, etc, de relevância para a esquerda radical
+            <li><img src={Arrow2} className='arrow' alt="a" /> Traduzindo textos, vídeos, memes, etc, de relevância para a esquerda radical
               <ul>
-                <li>Que podem ser inéditos em língua portuguesa (tradução), OU</li>
-                <li>Nossos melhores materiais a serem internacionalizados (versão);</li>
+                <li className='list-dot'>Que podem ser inéditos em língua portuguesa (tradução), OU</li>
+                <li className='list-dot'>Nossos melhores materiais a serem internacionalizados (versão);</li>
               </ul>
             </li>
-            <li>Agregando na formação dos novos profissionais da área;</li>
-            <li>Criando um fluxo integrado de trabalho para a colaboração eficiente;</li>
-            <li>Utilizando sempre recursos de código aberto como ato político;</li>
-            <li>Cultivando a cultura de traduções acessíveis.</li>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Agregando na formação dos novos profissionais da área;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Criando um fluxo integrado de trabalho para a colaboração eficiente;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Utilizando sempre recursos de código aberto como ato político;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Cultivando a cultura de traduções acessíveis.</li>
+            </div>
           </ul>
         </div>
-        <div className="info-list">
+
+        <div className="padding1 info-list">
           <h2>O QUE NÃO FAZEMOS</h2>
           <ul>
-            <li>Não pretendemos competir com esforços editoriais já existentes;</li>
-            <li>Não traduzimos clássicos já estabelecidos e publicados;</li>
-            <li>Não traduzimos qualquer conteúdo, pois temos uma curadoria para analisar as sugestões;</li>
-            <li>Não somos uma editora;</li>
-            <li>Não somos uma cooperativa profissional, apesar de termos integrantes com experiência na área;</li>
-            <li>Não somos vinculados a qualquer instituição, partido ou associação política e, da mesma forma, não exigimos tal coisa de nossos contribuintes.</li>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não pretendemos competir com esforços editoriais já existentes;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não traduzimos clássicos já estabelecidos e publicados;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não traduzimos qualquer conteúdo, pois temos uma curadoria para analisar as sugestões;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não somos uma editora;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não somos uma cooperativa profissional, apesar de termos integrantes com experiência na área;</li>
+            </div>
+            <div className='list-mg'>
+              <li><img src={Arrow2} className='arrow' alt="a" /> Não somos vinculados a qualquer instituição, partido ou associação política e, da mesma forma, não exigimos tal coisa de nossos contribuintes.</li>
+            </div>
           </ul>
         </div>
-      </section>
-
-
-      <section className={styles.paragraph_b}>
         <p>A Guilda é um <span className="highlight">coletivo</span> e, portanto, construída com base na disponibilidade de cada camarada para contribuir com
           seu tempo, inteligência e habilidades sob a organização centralizada e acordada entre todas as partes.</p>
       </section>
 
 
-      <section className={styles.primeiros_passos}>
+      <section className={`padding1 ${styles.primeiros_passos}`}>
         <h1 className="left right-line-title">PRIMEIROS PASSOS</h1>
         <p>Agora que você já entendeu, em linhas gerais, o que
           fazemos, aqui vão os primeiros passos para começar:</p>
       </section>
 
 
-      <section className={styles.primeiro}>
+      <section className={` ${styles.primeiro}`}>
         <h2 className="block-title">1. CADASTRO NA GUILDA</h2>
         <p>Não importa qual o seu nível ou familiaridade com a
           área de tradução ou revisão, você é bem-vinde.</p>
@@ -77,31 +96,31 @@ const PrimeirosPassos = () => {
           familiaridade e em qual destas áreas você gostaria de
           atuar:</p>
         <div className="info-list">
-          <ul className="arrow">
-            <li>Tradução</li>
-            <li>Revisão</li>
-            <li>Versão (tradução para idioma estrangeiro)</li>
-            <li>Legendagem em preparação de textos</li>
-            <li>Transcrição</li>
-            <li>Gestão de projetos</li>
-            <li>Organização e relações institucionais</li>
-            <li>Redes sociais</li>
-            <li>Design</li>
-            <li>TI</li>
-            <li>Formação</li>
-            <li>Curadoria</li>
+          <ul>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Tradução</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Revisão</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Versão (tradução para idioma estrangeiro)</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Legendagem em preparação de textos</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Transcrição</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Gestão de projetos</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Organização e relações institucionais</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Redes sociais</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Design</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> TI</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Formação</li>
+            <li><img src={Arrow2} className='arrow' alt="a" /> Curadoria</li>
           </ul>
         </div>
-        <div className="cta-left">
-          <a href="#" className="link-button">FORMULÁRIO DE INSCRIÇÃO</a>
+        <div className="padding2 left cta-left">
+          <Link to={'/'} className="link-button">FORMULÁRIO DE INSCRIÇÃO</Link>
         </div>
-        <p style={{textAlign: 'right'}}>Uma vez preenchido o formulário, saberemos que se
+        <p className='right'>Uma vez preenchido o formulário, saberemos que se
           dispôs a ajudar e teremos você em conta na hora de abrir
           chamados para projetos.</p>
       </section>
 
 
-      <section className={styles.segundo}>
+      <section className={`${styles.segundo}`}>
         <h2 className="block-title">2. DÊ UM OI LÁ NO CANAL!</h2>
         <p>Não se acanhe, se apresente lá no tópico e conheça nossa
           comunidade. Sempre haverá alguém para te acolher e ajudar:
@@ -112,23 +131,23 @@ const PrimeirosPassos = () => {
           projetos ou funções.</p>
         <p>Se tiver alguma dúvida, mande sua pergunta em nossas redes
           sociais ou em nosso tópico na Soberana.</p>
-        <div className="cta-right">
-          <a href="#" className="link-button">VISITE NOSSO TÓPICO NA SOBERANA</a>
+        <div className="padding1 right cta-right">
+          <Link to={'/'} className="link-button link-arrow">VISITE NOSSO TÓPICO NA SOBERANA</Link>
         </div>
-        <h2 className={`left right-line-title ${styles.medo}`}>MEDO PELA FALTA DE EXPERIÊNCIA?</h2>
-        <p>Não se preocupe! Como prezamos com a qualidade dos nossos
-          conteúdos e com a sua aprendizagem, é norma padrão da GTRR
-          que tradutores novatos fiquem sob a supervisão de tradutores
-          e revisores experientes, assim eles conseguirão corrigir o
-          necessário e ensinar mediante sua vasta experiência na área.</p>
+
+        <div className='padding1'>
+          <h2 className={`left ${styles.medo}`}>MEDO PELA FALTA DE EXPERIÊNCIA?</h2>
+          <p className='justify'>Não se preocupe! Como prezamos a qualidade dos nossos
+            conteúdos e sua aprendizagem, é norma padrão da GTRR
+            que tradutores novatos fiquem sob a supervisão de tradutores
+            e revisores experientes, assim eles conseguirão corrigir o
+            necessário e ensinar mediante sua vasta experiência na área.</p>
+          <div className="padding2 right cta-right">
+            <Link to={'/'} className="link-button link-arrow">VEJA MAIS SOBRE NOSSOS PROCESSOS</Link>
+          </div>
+        </div>
       </section>
 
-
-      <section className={styles.see_more}>
-        <div className="cta-right">
-          <a href="#" className="link-button">VEJA MAIS SOBRE NOSSOS PROCESSOS</a>
-        </div>
-      </section>
 
     </main>
   )

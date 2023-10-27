@@ -1,10 +1,9 @@
 /* custom resets */
-
 h1,
 h2,
 h3 {
      text-align: center;
-     line-height: 1.5em;
+     line-height: 1.2em;
      letter-spacing: 0.02em;
      font-family: var(--fontfamily);
      white-space: nowrap;
@@ -13,6 +12,7 @@ h3 {
 
 h1 {
      font-size: var(--font-size-lg);
+     margin: var(--margin1);
 }
 
 h2 {
@@ -34,7 +34,6 @@ button {
      background: none;
      color: inherit;
      border: none;
-     padding: 0;
      font: inherit;
      cursor: pointer;
      outline: inherit;
@@ -44,6 +43,42 @@ a {
      text-decoration: none;
      color: var(--black);
 }
+
+
+
+
+/* espaços */
+.padding1 {
+     padding: var(--padding1);
+}
+
+.padding2 {
+     padding: var(--padding2);
+}
+
+.margin1 {
+     margin: var(--margin1);
+}
+
+/* espaços */
+
+
+
+
+
+
+.font-text {
+     font-family: OpenDyslexic;
+}
+
+.font-title {
+     font-family: MolotGTRR;
+     font-size: var(--font-size-btn);
+     font-weight: 400;
+     letter-spacing: 2px;
+}
+
+
 
 .borda1 {
      border-radius: var(--border-radius-lg);
@@ -57,6 +92,7 @@ a {
      padding: 0 4px;
      border-radius: var(--border-radius-md);
      background-color: var(--orange);
+     display: inline;
 }
 
 .list-dot {
@@ -82,6 +118,10 @@ a {
      text-align: right;
 }
 
+.justify {
+     text-align: justify;
+}
+
 .white-border {
      color: var(--white);
      border: 2px solid var(--white);
@@ -96,6 +136,12 @@ a {
      text-transform: uppercase;
 }
 
+.black-fill {
+     background-color: var(--black);
+     padding: 12px 24px;
+     color: var(--white);
+
+}
 
 
 
@@ -104,7 +150,6 @@ a {
      display: inline;
      background-color: var(--black);
      color: var(--white);
-     line-height: 150%;
      text-align: center;
      letter-spacing: 0.02em;
      padding: 12px 24px;
@@ -117,7 +162,6 @@ a {
      align-items: center;
      justify-content: flex-end;
      gap: var(--spacing-md);
-     margin: 50px 0px;
 }
 
 .cta-right {
@@ -125,7 +169,6 @@ a {
      align-items: center;
      justify-content: flex-start;
      gap: var(--spacing-md);
-     margin: 50px 0px;
 }
 
 .cta-full {
@@ -133,7 +176,6 @@ a {
      align-items: center;
      justify-content: center;
      gap: var(--spacing-md);
-     margin: 50px;
 }
 
 .cta-full::before {
@@ -162,7 +204,7 @@ a {
 .left-line-title::before {
      display: block;
      content: '';
-     border-bottom: 3px solid var(--black);
+     border-bottom: 2px solid var(--black);
      position: relative;
      top: 1.35em;
      width: 500%;
@@ -197,9 +239,19 @@ a {
      content: url("assets/Arrow-1.svg");
 }
 
+.arrow {
+     width: 16px;
+     color: var(--black);
+     margin: 0 8px;
+}
+
+.list-mg {
+     margin: 8px 0;
+}
+
 /* info-list */
 .info-list {
-     margin: 12px 0;
+     margin: 16px 0;
 }
 
 .info-list h2 {
@@ -217,7 +269,7 @@ a {
 /* lista principal */
 .info-list>ul {
      background-color: var(--orange);
-     padding: 16px 32px;
+     padding: 24px;
      border-radius: var(--border-radius-md);
      list-style-position: inside;
      line-height: 1.5em;

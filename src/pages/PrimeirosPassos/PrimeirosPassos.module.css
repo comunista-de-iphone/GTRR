@@ -4,38 +4,24 @@
           ". . welc welc welc welc welc welc welc welc . ."
           ". prga prga prga prga prga prga prga prga prga prga ."
           ". . oque oque oque oque oque oque oque oque . ."
-          ". prgb prgb prgb prgb prgb prgb prgb prgb prgb prgb ."
-          ". . . pass pass pass pass pass pass pass pass pass"
-          "prim prim prim prim prim prim segu segu segu segu segu segu"
-          ". . . seee seee seee seee seee seee seee seee seee";
+          ". pass pass pass pass pass pass pass pass pass . ."
+          "prim prim prim prim prim prim segu segu segu segu segu segu";
 }
 
 .welcome {
      grid-area: welc;
 }
 
-.welcome img {
-     width: 100%;
-}
-
 .paragraph_a {
      grid-area: prga;
-     width: 100%;
 }
 
 .oque_fazemos {
      grid-area: oque;
-     width: 100%;
-}
-
-.paragraph_b {
-     grid-area: prgb;
-     width: 100%;
 }
 
 .primeiros_passos {
      grid-area: pass;
-     width: 100%;
 }
 
 .primeiro {
@@ -52,12 +38,7 @@
 
 .medo {
      grid-area: medo;
-     width: 100%;
-}
-
-.see_more {
-     grid-area: seee;
-     width: 100%;
+     padding: 24px 0 8px;
 }
 /* grid  */
 
@@ -74,9 +55,4 @@
      max-width: 485px;
      min-width: 250px;
      margin-top: var(--spacing-sm);
-}
-
-.segundo .medo {
-     margin-top: 100px;
-     margin-bottom: 20px;
 }

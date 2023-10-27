@@ -9,7 +9,7 @@ import styles from './Footer.module.css';
 
 function Footer() {
      return (
-          <footer className={styles.footer}>
+          <footer className={`padding1 ${styles.footer}`}>
                <div className={styles.promos}>
                     <img src={FooterPic} alt="GTRR" />
                     <div className={styles.socials}>
@@ -21,7 +21,7 @@ function Footer() {
                </div>
 
                <div className={styles.list}>
-                    <h2>ESSENCIAIS</h2>
+                    <h3>ESSENCIAIS</h3>
                     <Link to="/">INÍCIO</Link>
                     <Link to="primeiros-passos">PRIMEIROS PASSOS</Link>
                     <Link to="/estatuto">ESTATUTO</Link>
@@ -29,12 +29,12 @@ function Footer() {
                     <Link to="/faq">PERGUNTAS FREQUENTES</Link>
                </div>
                <div className={styles.list}>
-                    <h2>FORMULÁRIOS</h2>
+                    <h3>FORMULÁRIOS</h3>
                     <Link to="/sugestao">SUGESTÃO DE PROJETO</Link>
                     <Link to="/cadastro">CADASTRO</Link>
                </div>
                <div className={styles.list}>
-                    <h2>PROJETOS</h2>
+                    <h3>PROJETOS</h3>
                     <Link to="/em-andamento">EM ANDAMENTO</Link>
                     <Link to="/finalizados">FINALIZADOS</Link>
                </div>
