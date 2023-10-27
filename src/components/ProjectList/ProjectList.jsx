@@ -1,6 +1,7 @@
 import styles from './ProjectList.module.css'
 
 
+
 const ProjectList = ({projects}) => {
   return (
     <table className={styles.table}>
@@ -16,7 +17,7 @@ const ProjectList = ({projects}) => {
           <tr key={p.id}>
             <td>{p.name}</td>
             <td>{p.date}</td>
-            <td>{p.link}</td>
+            <td><a href={p.link}>Link</a></td>
           </tr>
         ))}
       </tbody>
