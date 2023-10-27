@@ -8,7 +8,6 @@
 
 .imagem {
      grid-area: img;
-     width: 100%;
 }
 
 .call_to_action {
@@ -27,7 +26,6 @@
 .imagem img {
      width: 100%;
      min-width: 480px;
-     height: auto;
 }
 
 .objetivo .outside_links {
@@ -35,7 +33,6 @@
      align-items: center;
      justify-content: center;
      gap: var(--spacing-md);
-     margin-top: var(--spacing-md);
 }
 
 .button_link {

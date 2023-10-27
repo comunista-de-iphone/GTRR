@@ -52,9 +52,14 @@ a {
      padding: var(--padding1);
 }
 
+.padding2 {
+     padding: var(--padding2);
+}
+
 .margin1 {
      margin: var(--margin1);
 }
+
 /* espaços */
 
 
@@ -113,6 +118,10 @@ a {
      text-align: right;
 }
 
+.justify {
+     text-align: justify;
+}
+
 .white-border {
      color: var(--white);
      border: 2px solid var(--white);
@@ -141,7 +150,6 @@ a {
      display: inline;
      background-color: var(--black);
      color: var(--white);
-     line-height: 150%;
      text-align: center;
      letter-spacing: 0.02em;
      padding: 12px 24px;
@@ -154,7 +162,6 @@ a {
      align-items: center;
      justify-content: flex-end;
      gap: var(--spacing-md);
-     /* padding: 50px 0; */
 }
 
 .cta-right {
@@ -162,7 +169,6 @@ a {
      align-items: center;
      justify-content: flex-start;
      gap: var(--spacing-md);
-     /* padding: 50px 0; */
 }
 
 .cta-full {
@@ -170,7 +176,6 @@ a {
      align-items: center;
      justify-content: center;
      gap: var(--spacing-md);
-     /* padding: 50px 0; */
 }
 
 .cta-full::before {

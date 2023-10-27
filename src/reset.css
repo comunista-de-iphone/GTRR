@@ -26,13 +26,18 @@
      --spacing-xs: 5px;
      --spacing-sm: 10px;
      --spacing-md2: 20px;
-     --spacing-md: 30px;
+
+     /* padding dos paragrafos */
+     --spacing-md: 16px;
+     /* padding dos paragrafos */
+
      --spacing-xl: 100px;
      --fontfamily: MolotGTRR;
      
      /* padding */
      --primary-top-padding: 12px 0;
      --padding1: 24px 0;
+     --padding2: 48px 0;
      --margin1: 24px 0;
      --p2: 30px 0;
      --p3: 20px 0;

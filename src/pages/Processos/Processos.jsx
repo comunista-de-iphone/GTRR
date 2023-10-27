@@ -66,15 +66,15 @@ const Processos = () => {
                </section>
 
 
-               <section className={`padding1 ${styles.curadoria}`}>
+               <section className={` ${styles.curadoria}`}>
                     <h1 className='left right-line-title'>Curadoria</h1>
                     <h2 className='block-title'>Sugestão de projetos</h2>
-                    <p><span className='highlight'>Todos os projetos a serem sugeridos devem ser indicados exclusivamente através do formulário.</span>
+                    <p style={{ marginTop: '12px' }}><span className='highlight'>Todos os projetos a serem sugeridos devem ser indicados exclusivamente através do formulário.</span>
                          Quaisquer sugestões no chat do canal não serão consideradas.</p>
                     <p>A equipe de curadoria irá analisar caso a caso se o projeto será ou não aprovado e enviado aos gerentes para que se formem os times de produção.</p>
                     <p>Há também a possibilidade de se voluntariar para fazer a pesquisa e coleta de conteúdos para a curadoria,
                          basta marcar tal opção no formulário de cadastro, junto da(s) língua(s) nas quais você atuaria.</p>
-                    <div className='cta-full'>
+                    <div className='padding2 cta-full'>
                          <Link to={'/'} className='borda2 white-border'>Formulário da curadoria</Link>
                          <Link to={'/'} className='borda2 white-border'>Formulário de inscrição</Link>
                     </div>
@@ -82,33 +82,39 @@ const Processos = () => {
 
 
                <section className={`padding1 ${styles.projeto_curado}`}>
-                    <h1 className='block-title'>Como os projetos são curados?</h1>
-                    <div className={styles.sides}>
+                    <div className='center'>
+                         <h1 className='block-title'>Como os projetos são curados?</h1>
+                    </div>
+                    <div className={`padding2 ${styles.sides}`}>
                          <img src={programa} alt="programa" />
                          <div>
-                              <p>A curadoria dos projetos a serem trabalhados na GTRR é feita de forma coletiva, utilizando processos baseados na análise de seu formato,
+                              <p className='justify'>A curadoria dos projetos a serem trabalhados na GTRR é feita de forma coletiva, utilizando processos baseados na análise de seu formato,
                                    relevância e complexidade. Tal análise considera a obra estar ou não em domínio público, a sua existência no mercado editorial brasileiro,
                                    o seu alcance, o seu impacto, a nossa confiança na execução da tarefa e a complexidade desta. Tal análise tem por fim avaliar a
                                    possibilidade de produção e a prioridade na alocação de recursos para a proposta. Primeiro consideramos a disponibilidade em domínio
                                    público para determinar se o projeto será feito na íntegra ou não, então aplicamos o modelo RICE para chegarmos na priorização dos conteúdos:</p>
-                              <Link to={'/'} className='link-arrow cta-right'>Acesse o backlog de projetos já avaliados</Link>
+                              <div className="padding2 right cta-right">
+                                   <Link to={'/'} className='link-arrow'>Acesse o backlog de projetos já avaliados</Link>
+                              </div>
+
                          </div>
                     </div>
                </section>
 
 
-               <section className={`padding1 ${styles.programa}`}>
+               <section className={`${styles.programa}`}>
                     <h1>Programas que usamos</h1>
                     <p className='center'>O mundo da tradução hoje é muito mais que papel, caneta e tinta.
                          Ainda mais quando somos uma guilda composta de camaradas de diferentes lugares do mundo, ligados e organizados pelas “internetes”.
                     </p>
-                    <div className={styles.flex_sides}>
+                    <div className={`padding1 ${styles.flex_sides}`}>
                          <div className={`highlight ${styles.col1}`}>
                               <p>Optou-se pelo uso político de softwares livres (open source) devido à acessibilidade que eles possibilitam, além da visão mais
                                    colaborativa de uso e desenvolvimento de ferramentas. Portanto, o nosso software de tradução dedicado é o OmegaT. Em relação a
                                    editores de texto, indicamos (mas não exigimos) o uso do LibreOffice e do OpenOffice,
                                    tendo como fonte padrão para publicação a OpenDyslexic.</p>
                          </div>
+                         
                          <div className={`${styles.col2}`}>
                               <h2 className='borda2'>Github</h2>
                               <p>No nosso repositório de GitHub, temos os arquivos dos projetos, assim como os
@@ -124,12 +130,21 @@ const Processos = () => {
                </section>
 
 
-               <section className={`padding1 ${styles.reuniao}`}>
+               <section className={`padding2 ${styles.git}`}>
+                    <div className="padding1 center cta-full">
+                         <Link to={'/'} className='link-arrow'>Acesse nosso repositório no github</Link>
+                    </div>
+               </section>
+
+
+               <section className={`${styles.reuniao}`}>
                     <h1>reuniões e atas</h1>
                     <p>Todas as decisões sobre os rumos da GTRR são discutidas e tomadas coletivamente em nossas reuniões mensais.
                          Fique de olho para o anúncio destas, assim como para as consultas prévias em formato de votação sobre os melhores dias e horários.
                          Você também pode ler o que foi deliberado em reuniões passadas no nosso arquivo de atas.</p>
-                    <Link to={'/'} className='borda2'>Arquivo de atas</Link>
+                    <div className='padding1'>
+                         <Link to={'/'} className='black-fill link-button'>Arquivo de atas</Link>
+                    </div>
                </section>
 
 

@@ -9,7 +9,7 @@ import styles from './Footer.module.css';
 
 function Footer() {
      return (
-          <footer className={styles.footer}>
+          <footer className={`padding1 ${styles.footer}`}>
                <div className={styles.promos}>
                     <img src={FooterPic} alt="GTRR" />
                     <div className={styles.socials}>

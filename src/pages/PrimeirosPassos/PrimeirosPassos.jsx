@@ -1,8 +1,8 @@
 import React from 'react'
 import BemVinde from '../../assets/GTRR-bemvinde.svg';
 import Arrow2 from '../../assets/Arrow-2.svg';
-import Arrow1 from '../../assets/Arrow-1.svg';
 import styles from './PrimeirosPassos.module.css';
+import { Link } from 'react-router-dom';
 
 
 const PrimeirosPassos = () => {
@@ -23,7 +23,7 @@ const PrimeirosPassos = () => {
       </section>
 
 
-      <section className={`padding1 ${styles.oque_fazemos}`}>
+      <section className={` ${styles.oque_fazemos}`}>
         <div className="info-list">
           <h2>O QUE FAZEMOS</h2>
           <ul>
@@ -48,7 +48,7 @@ const PrimeirosPassos = () => {
           </ul>
         </div>
 
-        <div className="info-list">
+        <div className="padding1 info-list">
           <h2>O QUE NÃO FAZEMOS</h2>
           <ul>
             <div className='list-mg'>
@@ -71,10 +71,6 @@ const PrimeirosPassos = () => {
             </div>
           </ul>
         </div>
-      </section>
-
-
-      <section className={`padding1 ${styles.paragraph_b}`}>
         <p>A Guilda é um <span className="highlight">coletivo</span> e, portanto, construída com base na disponibilidade de cada camarada para contribuir com
           seu tempo, inteligência e habilidades sob a organização centralizada e acordada entre todas as partes.</p>
       </section>
@@ -87,7 +83,7 @@ const PrimeirosPassos = () => {
       </section>
 
 
-      <section className={`padding1 ${styles.primeiro}`}>
+      <section className={` ${styles.primeiro}`}>
         <h2 className="block-title">1. CADASTRO NA GUILDA</h2>
         <p>Não importa qual o seu nível ou familiaridade com a
           área de tradução ou revisão, você é bem-vinde.</p>
@@ -115,16 +111,16 @@ const PrimeirosPassos = () => {
             <li><img src={Arrow2} className='arrow' alt="a" /> Curadoria</li>
           </ul>
         </div>
-        <div className="cta-left">
-          <a href="#" className="link-button">FORMULÁRIO DE INSCRIÇÃO</a>
+        <div className="padding2 left cta-left">
+          <Link to={'/'} className="link-button">FORMULÁRIO DE INSCRIÇÃO</Link>
         </div>
-        <p style={{ textAlign: 'right' }}>Uma vez preenchido o formulário, saberemos que se
+        <p className='right'>Uma vez preenchido o formulário, saberemos que se
           dispôs a ajudar e teremos você em conta na hora de abrir
           chamados para projetos.</p>
       </section>
 
 
-      <section className={`padding1 ${styles.segundo}`}>
+      <section className={`${styles.segundo}`}>
         <h2 className="block-title">2. DÊ UM OI LÁ NO CANAL!</h2>
         <p>Não se acanhe, se apresente lá no tópico e conheça nossa
           comunidade. Sempre haverá alguém para te acolher e ajudar:
@@ -135,23 +131,23 @@ const PrimeirosPassos = () => {
           projetos ou funções.</p>
         <p>Se tiver alguma dúvida, mande sua pergunta em nossas redes
           sociais ou em nosso tópico na Soberana.</p>
-        <div className="cta-right">
-          <a href="#" className="link-button link-arrow">VISITE NOSSO TÓPICO NA SOBERANA</a>
+        <div className="padding1 right cta-right">
+          <Link to={'/'} className="link-button link-arrow">VISITE NOSSO TÓPICO NA SOBERANA</Link>
         </div>
-        <h2 className={`left right-line-title ${styles.medo}`}>MEDO PELA FALTA DE EXPERIÊNCIA?</h2>
-        <p>Não se preocupe! Como prezamos com a qualidade dos nossos
-          conteúdos e com a sua aprendizagem, é norma padrão da GTRR
-          que tradutores novatos fiquem sob a supervisão de tradutores
-          e revisores experientes, assim eles conseguirão corrigir o
-          necessário e ensinar mediante sua vasta experiência na área.</p>
+
+        <div className='padding1'>
+          <h2 className={`left ${styles.medo}`}>MEDO PELA FALTA DE EXPERIÊNCIA?</h2>
+          <p className='justify'>Não se preocupe! Como prezamos a qualidade dos nossos
+            conteúdos e sua aprendizagem, é norma padrão da GTRR
+            que tradutores novatos fiquem sob a supervisão de tradutores
+            e revisores experientes, assim eles conseguirão corrigir o
+            necessário e ensinar mediante sua vasta experiência na área.</p>
+          <div className="padding2 right cta-right">
+            <Link to={'/'} className="link-button link-arrow">VEJA MAIS SOBRE NOSSOS PROCESSOS</Link>
+          </div>
+        </div>
       </section>
 
-
-      <section className={`padding1 ${styles.see_more}`}>
-        <div className="cta-right">
-          <a href="#" className="link-button link-arrow">VEJA MAIS SOBRE NOSSOS PROCESSOS</a>
-        </div>
-      </section>
 
     </main>
   )

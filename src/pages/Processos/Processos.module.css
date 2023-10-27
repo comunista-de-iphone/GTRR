@@ -4,8 +4,9 @@
           ". . flow flow flow flow flow flow flow flow . ."
           ". . apont apont apont apont apont apont apont apont . ."
           ". . heal heal heal heal heal heal heal heal . ."
-          ". . proj_heal proj_heal proj_heal proj_heal proj_heal proj_heal proj_heal proj_heal . ."
+          ". . . . proj_heal proj_heal proj_heal proj_heal . . . ."
           ". . program program program program program program program program . ."
+          "git git git git git git git git git git git git"
           ". . . meet meet meet meet meet meet . . .";
 }
 
@@ -33,33 +34,31 @@
      grid-area: program;
 }
 
+.git {
+     grid-area: git;
+}
+
 .reuniao {
      grid-area: meet;
      text-align: center;
      padding: 24px 0;
 }
 
-
-
-.projeto_curado img {
-     width: 100%;
-     border-radius: 8px;
-}
-
 .projeto_curado .sides {
-     display: grid;
-     grid-template-columns: 1.5fr 1fr;
-     grid-template-rows: 1fr;
-     
+     display: flex;
+     justify-content: center;
+     align-items: start;
+     column-gap: 2em;
 }
 
-.projeto_curado p {
-     margin-bottom: 80px;
-     margin-left: 40px;
+.sides p {
+     width: 85%;
+     line-height: 180%;
 }
+
 
 .programa a {
-     border: 3px solid var(--black);
+     border: 2px solid var(--black);
      color: var(--black);
 }
 
@@ -67,10 +66,10 @@
      display: grid;
      grid-template-columns: 1fr 1fr;
      grid-template-rows: 1fr;
-     gap: 2rem;
+     gap: 2em;
      grid-template-areas:
           "col1 col2";
-
+     place-items: center;
 }
 
 .flex_sides h2 {
@@ -80,9 +79,7 @@
 
 .flex_sides .col1 {
      grid-area: col1;
-     padding: 0 32px;
-     display: grid;
-     place-items: center;
+     padding: 16px;
 }
 
 .flex_sides .col2 {
@@ -101,14 +98,4 @@
      color: var(--black);
      text-transform: uppercase;
      font-family: var(--fontfamily);
-}
-
-.reuniao a {
-     padding: 12px 24px;
-     margin: 12px 0;
-     background-color: var(--black);
-     color: var(--white);
-     text-transform: uppercase;
-     font-family: var(--fontfamily);
-     font-size: var(--font-size-sm);
 }
