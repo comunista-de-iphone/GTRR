@@ -75,8 +75,8 @@ const Processos = () => {
                     <p>Há também a possibilidade de se voluntariar para fazer a pesquisa e coleta de conteúdos para a curadoria,
                          basta marcar tal opção no formulário de cadastro, junto da(s) língua(s) nas quais você atuaria.</p>
                     <div className='padding2 cta-full'>
-                         <Link to={'/'} className='borda2 white-border'>Formulário da curadoria</Link>
-                         <Link to={'/'} className='borda2 white-border'>Formulário de inscrição</Link>
+                         <Link to={'/'} className='link-button'>Formulário da curadoria</Link>
+                         <Link to={'/'} className='link-button'>Formulário de inscrição</Link>
                     </div>
                </section>
 

@@ -38,6 +38,10 @@ button {
      cursor: pointer;
      outline: inherit;
 }
+button:hover {
+     background-color: var(--white);
+     color: var(--black);
+}
 
 a {
      text-decoration: none;
@@ -223,6 +227,12 @@ a {
 
      font-weight: 400;
      letter-spacing: 2px;
+}
+
+.link-button:hover {
+     border: 2px solid var(--black);
+     background-color: var(--white);
+     color: var(--black);
 }
 
 .link-arrow {

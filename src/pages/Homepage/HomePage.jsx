@@ -21,8 +21,8 @@ const HomePage = () => {
 
                <section className={`padding1 ${styles.call_to_action}`}>
                     <div className='center cta-full'>
-                         <Link to="/primeiros-passos" className={`white-border borda1 font-title`}>PRIMEIROS PASSOS</Link>
-                         <Link to="/manifesto" className={`white-border borda1 font-title`}>NOSSO MANIFESTO</Link>
+                         <Link to="/primeiros-passos" className={`link-button`}>PRIMEIROS PASSOS</Link>
+                         <Link to="/manifesto" className={`link-button`}>NOSSO MANIFESTO</Link>
                     </div>
                </section>
 
