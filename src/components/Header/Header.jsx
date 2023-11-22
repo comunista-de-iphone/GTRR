@@ -1,46 +1,39 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Carat from '../../assets/carat-down.svg';
 import Logo from '../../assets/GTRR-Logo.svg';
 import styles from './Header.module.css';
 
-window.addEventListener('scroll', function() {
-     const checkbox = document.querySelector('.hamburger-checkbox');
-
-     if (window.scrollY > document.body.offsetTop) {
-          checkbox.checked = false;
-     }
-});
-
 const Header = () => {
+     const location = useLocation();
      return (
           <header className={styles.header}>
                <Link to="/"><img className={styles.header_logo} src={Logo} alt="GTRR" /></Link>
                <nav className={styles.nav_options}>
-                    <Link className={styles.nav_item} to="/">INÍCIO</Link>
-                    <Link className={styles.nav_item} to="/primeiros-passos">PRIMEIROS PASSOS</Link>
+                    <Link className={`${styles.nav_item} ${location.pathname == "/" ? styles.active : ""}`} to="/">INÍCIO</Link>
+                    <Link className={`${styles.nav_item} ${location.pathname == "/primeiros-passos" ? styles.active : ""}`} to="/primeiros-passos">PRIMEIROS PASSOS</Link>
 
 
-                    <Link className={styles.nav_item} to="/nossos-processos">PROCESSOS</Link>
+                    <Link className={`${`${styles.nav_item} ${location.pathname == "/nossos-processos" ? styles.active : ""}`} ${location.pathname == "/nossos-processos" ? styles.active : ""}`} to="/nossos-processos">PROCESSOS</Link>
 
 
                     <div className={styles.sub_nav}>
                          <button className={styles.sub_nav_btn}>SOBRE <img src={Carat} alt="(+)" /></button>
                          <div className={styles.sub_nav_content}>
-                              <Link className={styles.sub_nav_item} to="/estatuto">ESTATUTO</Link>
-                              <Link className={styles.sub_nav_item} to="/manifesto">MANIFESTO</Link>
+                              <Link className={`${styles.sub_nav_item} ${location.pathname == "/estatuto" ? "active" : ""}`} to="/estatuto">ESTATUTO</Link>
+                              <Link className={`${styles.sub_nav_item} ${location.pathname == "/manifesto" ? "active" : ""}`} to="/manifesto">MANIFESTO</Link>
                          </div>
                     </div>
-                    <Link className={styles.nav_item} to="/faq">FAQ</Link>
+                    <Link className={`${styles.nav_item} ${location.pathname == "/faq" ? styles.active : ""}`} to="/faq">FAQ</Link>
                     <div className={styles.sub_nav}>
                          <button className={styles.sub_nav_btn}>PROJETOS <img src={Carat} alt="(+)" /></button>
                          <div className={styles.sub_nav_content}>
-                              <Link className={styles.sub_nav_item} to="/em-andamento">EM ANDAMENTO</Link>
-                              <Link className={styles.sub_nav_item} to="/finalizados">FINALIZADOS</Link>
-                              <Link className={styles.sub_nav_item} to="/sugestao">SUGIRA UM PROJETO</Link>
+                              <Link className={`${styles.sub_nav_item} ${location.pathname == "/em-andamento" ? "active" : ""}`} to="/em-andamento">EM ANDAMENTO</Link>
+                              <Link className={`${styles.sub_nav_item} ${location.pathname == "/finalizados" ? "active" : ""}`} to="/finalizados">FINALIZADOS</Link>
+                              <Link className={`${styles.sub_nav_item} ${location.pathname == "/sugestao" ? "active" : ""}`} to="/sugestao">SUGIRA UM PROJETO</Link>
                          </div>
                     </div>
-                    <Link className={styles.nav_item} to="/cadastro">CADASTRO</Link>
+                    <Link className={`${styles.nav_item} ${location.pathname == "/cadastro" ? styles.active : ""}`} to="/cadastro">CADASTRO</Link>
                </nav>
 
 
