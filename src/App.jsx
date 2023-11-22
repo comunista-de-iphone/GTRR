@@ -21,19 +21,19 @@ const App = () => {
   return (
     <Router>
       <Header />
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/primeiros-passos' element={<PrimeirosPassos />} />
-          <Route path='/faq' element={<Faq />} />
-          <Route path='/nossos-processos' element={<Processos />} />
-          <Route path='/manifesto' element={<Manifesto />} />
-          <Route path='/estatuto' element={<Estatuto />} />
-          <Route path='/em-andamento' element={<EmAndamento />} />
-          <Route path='/finalizados' element={<Finalizados />} />
-          <Route path='/sugestao' element={<SugiraProjeto />} />
-          <Route path='/cadastro' element={<Cadastro />} />
-          <Route path='*' element={<Error />} />
-        </Routes>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/primeiros-passos' element={<PrimeirosPassos />} />
+        <Route path='/faq' element={<Faq />} />
+        <Route path='/nossos-processos' element={<Processos />} />
+        <Route path='/manifesto' element={<Manifesto />} />
+        <Route path='/estatuto' element={<Estatuto />} />
+        <Route path='/em-andamento' element={<EmAndamento />} />
+        <Route path='/finalizados' element={<Finalizados />} />
+        <Route path='/sugestao' element={<SugiraProjeto />} />
+        <Route path='/cadastro' element={<Cadastro />} />
+        <Route path='*' element={<Error />} />
+      </Routes>
       <Footer />
     </Router>
   )
